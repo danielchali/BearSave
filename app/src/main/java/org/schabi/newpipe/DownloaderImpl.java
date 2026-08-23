@@ -37,6 +37,14 @@ public final class DownloaderImpl extends Downloader {
             "youtube_restricted_mode_key";
     public static final String YOUTUBE_RESTRICTED_MODE_COOKIE = "PREF=f2=8000000";
     public static final String YOUTUBE_DOMAIN = "youtube.com";
+    /**
+     * Prevents YouTube from redirecting HTML requests to consent.youtube.com in regions where
+     * the consent page would otherwise loop when fetched by a headless client.
+     */
+    public static final String YOUTUBE_CONSENT_COOKIE =
+            "CONSENT=YES+cb.20210328-17-p0.en+FX";
+    /** Current YouTube WEB client version used when the service-worker fetch is bypassed. */
+    public static final String YOUTUBE_WEB_CLIENT_VERSION = "2.20260805.01.00";
 
     private static DownloaderImpl instance;
     private final Map<String, String> mCookies;
@@ -77,7 +85,9 @@ public final class DownloaderImpl extends Downloader {
 
     public String getCookies(final String url) {
         final String youtubeCookie = url.contains(YOUTUBE_DOMAIN)
-                ? getCookie(YOUTUBE_RESTRICTED_MODE_COOKIE_KEY) : null;
+                ? Stream.of(YOUTUBE_CONSENT_COOKIE, getCookie(YOUTUBE_RESTRICTED_MODE_COOKIE_KEY))
+                .filter(Objects::nonNull)
+                .collect(Collectors.joining("; ")) : null;
 
         // Recaptcha cookie is always added TODO: not sure if this is necessary
         return Stream.of(youtubeCookie, getCookie(ReCaptchaActivity.RECAPTCHA_COOKIES_KEY))
@@ -134,11 +144,41 @@ public final class DownloaderImpl extends Downloader {
         }
     }
 
+    /**
+     * YouTube redirects an empty search-results query between www.youtube.com and m.youtube.com
+     * on some Android/device-region combinations. The extractor only needs the page to discover
+     * the current client version, so a harmless non-empty query avoids that redirect loop.
+     *
+     * @param url the original request URL
+     * @return the normalized URL
+     */
+    private static String normalizeYoutubeRequestUrl(final String url) {
+        if (url.contains("youtube.com/results?search_query=&")) {
+            return url.replace("search_query=&", "search_query=dvid&");
+        }
+        return url;
+    }
+
     @Override
     public Response execute(@NonNull final Request request)
             throws IOException, ReCaptchaException {
         final String httpMethod = request.httpMethod();
-        final String url = request.url();
+        final String url = normalizeYoutubeRequestUrl(request.url());
+
+        // The extractor normally fetches sw.js to discover this value. On some devices YouTube
+        // redirects that fetch into an endless www/mobile loop, so provide the current version
+        // locally and prevent the extractor from falling back to the problematic HTML endpoint.
+        if (url.equals("https://www.youtube.com/sw.js")) {
+            final String serviceWorker = "\"INNERTUBE_CONTEXT_CLIENT_VERSION\":\""
+                    + YOUTUBE_WEB_CLIENT_VERSION + "\"";
+            return new Response(
+                    200,
+                    "OK",
+                    Map.of("Content-Type", List.of("application/javascript")),
+                    serviceWorker,
+                    url);
+        }
+
         final Map<String, List<String>> headers = request.headers();
         final byte[] dataToSend = request.dataToSend();
 
@@ -157,11 +197,27 @@ public final class DownloaderImpl extends Downloader {
             requestBuilder.addHeader("Cookie", cookies);
         }
 
+        final String requestCookies = headers.entrySet().stream()
+                .filter(entry -> entry.getKey().equalsIgnoreCase("Cookie"))
+                .flatMap(entry -> entry.getValue().stream())
+                .collect(Collectors.joining("; "));
+
         headers.forEach((headerName, headerValueList) -> {
             requestBuilder.removeHeader(headerName);
             headerValueList.forEach(headerValue ->
                     requestBuilder.addHeader(headerName, headerValue));
         });
+
+        if (url.contains(YOUTUBE_DOMAIN)) {
+            final String mergedCookies = Stream.of(cookies, requestCookies)
+                    .filter(cookie -> cookie != null && !cookie.isEmpty())
+                    .flatMap(cookie -> Arrays.stream(cookie.split("; *")))
+                    .distinct()
+                    .collect(Collectors.joining("; "));
+            if (!mergedCookies.isEmpty()) {
+                requestBuilder.header("Cookie", mergedCookies);
+            }
+        }
 
         try (
                 okhttp3.Response response = client.newCall(requestBuilder.build()).execute()

@@ -34,6 +34,8 @@ class ErrorPanelHelper(
         errorPanelRoot.findViewById(R.id.error_message_service_info_view)
     private val errorServiceExplanationTextView: TextView =
         errorPanelRoot.findViewById(R.id.error_message_service_explanation_view)
+    private val errorDetailsTextView: TextView =
+        errorPanelRoot.findViewById(R.id.error_message_details_view)
     private val errorActionButton: Button =
         errorPanelRoot.findViewById(R.id.error_action_button)
     private val errorRetryButton: Button =
@@ -58,6 +60,7 @@ class ErrorPanelHelper(
 
         errorServiceInfoTextView.isVisible = false
         errorServiceExplanationTextView.isVisible = false
+        errorDetailsTextView.isVisible = false
         errorActionButton.isVisible = false
         errorRetryButton.isVisible = false
         errorOpenInBrowserButton.isVisible = false
@@ -66,6 +69,19 @@ class ErrorPanelHelper(
     fun showError(errorInfo: ErrorInfo) {
         ensureDefaultVisibility()
         errorTextView.setTextWithLinks(errorInfo.getMessage(context))
+
+        val firstExceptionLine = errorInfo.stackTraces
+            .asSequence()
+            .flatMap { it.lineSequence() }
+            .map { it.trim() }
+            .firstOrNull { it.isNotEmpty() }
+        if (firstExceptionLine != null) {
+            errorDetailsTextView.text = context.getString(
+                R.string.error_details_inline,
+                firstExceptionLine
+            )
+            errorDetailsTextView.isVisible = true
+        }
 
         if (errorInfo.recaptchaUrl != null) {
             showAndSetErrorButtonAction(R.string.recaptcha_solve) {

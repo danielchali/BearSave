@@ -9,7 +9,8 @@
         <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
     <style name="Base.OpeningTheme" parent="Base.V21.OpeningTheme">
-        <item name="android:navigationBarColor">@color/light_youtube_primary_color</item>
+        <item name="android:statusBarColor">@color/light_dvid_primary_color</item>
+        <item name="android:navigationBarColor">@color/light_dvid_primary_color</item>
     </style>
     <style name="OpeningTheme" parent="Base.OpeningTheme" />
 
@@ -24,9 +25,10 @@
 
     <!-- Light Theme -->
     <style name="Base.V21.LightTheme" parent="Base">
-        <item name="colorPrimary">@color/light_youtube_primary_color</item>
-        <item name="colorPrimaryDark">@color/light_youtube_primary_color</item>
-        <item name="colorAccent">@color/light_youtube_accent_color</item>
+        <item name="colorPrimary">@color/light_dvid_primary_color</item>
+        <item name="colorPrimaryDark">@color/light_dvid_primary_color</item>
+        <item name="android:statusBarColor">@color/light_dvid_primary_color</item>
+        <item name="colorAccent">@color/light_dvid_accent_color</item>
         <item name="android:windowBackground">@color/light_background_color</item>
         <item name="windowBackground">@color/light_background_color</item>
 
@@ -48,9 +50,10 @@
 
     <!-- Dark Theme -->
     <style name="Base.V21.DarkTheme" parent="Base">
-        <item name="colorPrimary">@color/dark_youtube_primary_color</item>
-        <item name="colorPrimaryDark">@color/dark_youtube_primary_color</item>
-        <item name="colorAccent">@color/dark_youtube_accent_color</item>
+        <item name="colorPrimary">@color/dark_dvid_primary_color</item>
+        <item name="colorPrimaryDark">@color/dark_dvid_primary_color</item>
+        <item name="android:statusBarColor">@color/dark_dvid_primary_color</item>
+        <item name="colorAccent">@color/dark_dvid_accent_color</item>
         <item name="android:windowBackground">@color/dark_background_color</item>
         <item name="windowBackground">@color/dark_background_color</item>
 
@@ -88,33 +91,33 @@
 
     <!-- Dialogs -->
     <style name="LightDialogTheme" parent="Theme.AppCompat.DayNight.Dialog">
-        <item name="colorPrimary">@color/light_youtube_primary_color</item>
-        <item name="colorPrimaryDark">@color/light_youtube_primary_color</item>
-        <item name="colorAccent">@color/light_youtube_accent_color</item>
+        <item name="colorPrimary">@color/light_dvid_primary_color</item>
+        <item name="colorPrimaryDark">@color/light_dvid_primary_color</item>
+        <item name="colorAccent">@color/light_dvid_accent_color</item>
         <item name="android:windowBackground">@color/light_dialog_background_color</item>
         <item name="windowBackground">@color/light_dialog_background_color</item>
     </style>
 
     <style name="DarkDialogTheme" parent="Theme.AppCompat.DayNight.Dialog">
-        <item name="colorPrimary">@color/dark_youtube_primary_color</item>
-        <item name="colorPrimaryDark">@color/dark_youtube_primary_color</item>
-        <item name="colorAccent">@color/dark_youtube_accent_color</item>
+        <item name="colorPrimary">@color/dark_dvid_primary_color</item>
+        <item name="colorPrimaryDark">@color/dark_dvid_primary_color</item>
+        <item name="colorAccent">@color/dark_dvid_accent_color</item>
         <item name="android:windowBackground">@color/dark_dialog_background_color</item>
         <item name="windowBackground">@color/dark_dialog_background_color</item>
     </style>
 
     <style name="LightDialogMinWidthTheme" parent="Theme.AppCompat.DayNight.Dialog.MinWidth">
-        <item name="colorPrimary">@color/light_youtube_primary_color</item>
-        <item name="colorPrimaryDark">@color/light_youtube_primary_color</item>
-        <item name="colorAccent">@color/light_youtube_accent_color</item>
+        <item name="colorPrimary">@color/light_dvid_primary_color</item>
+        <item name="colorPrimaryDark">@color/light_dvid_primary_color</item>
+        <item name="colorAccent">@color/light_dvid_accent_color</item>
         <item name="android:windowBackground">@color/light_dialog_background_color</item>
         <item name="windowBackground">@color/light_dialog_background_color</item>
     </style>
 
     <style name="DarkDialogMinWidthTheme" parent="Theme.AppCompat.DayNight.Dialog.MinWidth">
-        <item name="colorPrimary">@color/dark_youtube_primary_color</item>
-        <item name="colorPrimaryDark">@color/dark_youtube_primary_color</item>
-        <item name="colorAccent">@color/dark_youtube_accent_color</item>
+        <item name="colorPrimary">@color/dark_dvid_primary_color</item>
+        <item name="colorPrimaryDark">@color/dark_dvid_primary_color</item>
+        <item name="colorAccent">@color/dark_dvid_accent_color</item>
         <item name="android:windowBackground">@color/dark_dialog_background_color</item>
         <item name="windowBackground">@color/dark_dialog_background_color</item>
     </style>

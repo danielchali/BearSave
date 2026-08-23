@@ -234,7 +234,8 @@
     <string name="general_error">Error</string>
     <string name="download_to_sdcard_error_title">External storage unavailable</string>
     <string name="download_to_sdcard_error_message">Downloading to external SD card not possible. Reset download folder location?</string>
-    <string name="network_error">Network error</string>
+    <string name="network_error">Could not reach the content service</string>
+    <string name="error_details_inline">Details: %1$s</string>
     <string name="could_not_load_thumbnails">Could not load all thumbnails</string>
     <string name="parsing_error">Could not parse website</string>
     <string name="content_not_available">Content unavailable</string>

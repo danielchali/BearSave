@@ -43,6 +43,19 @@
         tools:visibility="visible" />
 
 
+    <org.schabi.newpipe.views.NewPipeTextView
+        android:id="@+id/error_message_details_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:maxWidth="320dp"
+        android:text="@string/general_error"
+        android:textSize="12sp"
+        android:visibility="gone"
+        tools:text="java.net.UnknownHostException: host lookup failed"
+        tools:visibility="visible" />
+
     <Button
         android:id="@+id/error_action_button"
         android:layout_width="wrap_content"
