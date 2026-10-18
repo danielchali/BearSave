@@ -2,6 +2,13 @@ package org.schabi.newpipe.fragments.list.recommendations;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import org.schabi.newpipe.R;
 import org.schabi.newpipe.database.history.model.StreamHistoryEntry;
@@ -40,6 +47,7 @@ public class RecommendationsFragment
     private static final int MAX_RECOMMENDATIONS = 100;
 
     private HistoryRecordManager historyRecordManager;
+    private SwipeRefreshLayout swipeRefreshLayout;
 
     public RecommendationsFragment() {
         super(UserAction.REQUESTED_STREAM);
@@ -51,6 +59,35 @@ public class RecommendationsFragment
         historyRecordManager = new HistoryRecordManager(requireContext());
         setInitialData(ServiceList.YouTube.getServiceId(), "",
                 getString(R.string.recommendations_title));
+    }
+
+    @Override
+    public View onCreateView(@NonNull final LayoutInflater inflater,
+                             @Nullable final ViewGroup container,
+                             @Nullable final Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_recommendations, container, false);
+    }
+
+    @Override
+    protected void initViews(final View rootView, final Bundle savedInstanceState) {
+        super.initViews(rootView, savedInstanceState);
+        swipeRefreshLayout = rootView.findViewById(R.id.swipe_refresh_layout);
+    }
+
+    @Override
+    protected void initListeners() {
+        super.initListeners();
+        swipeRefreshLayout.setOnRefreshListener(this::reloadContent);
+    }
+
+    @Override
+    public void onDestroyView() {
+        stopRefreshing();
+        if (swipeRefreshLayout != null) {
+            swipeRefreshLayout.setOnRefreshListener(null);
+        }
+        super.onDestroyView();
+        swipeRefreshLayout = null;
     }
 
     @Override
@@ -112,9 +149,28 @@ public class RecommendationsFragment
     }
 
     @Override
+    public void handleResult(@NonNull final RecommendationsInfo result) {
+        stopRefreshing();
+        super.handleResult(result);
+    }
+
+    @Override
+    public void handleError() {
+        stopRefreshing();
+        super.handleError();
+    }
+
+    @Override
     public void showEmptyState() {
+        stopRefreshing();
         setEmptyStateMessage(R.string.recommendations_empty);
         super.showEmptyState();
+    }
+
+    private void stopRefreshing() {
+        if (swipeRefreshLayout != null) {
+            swipeRefreshLayout.setRefreshing(false);
+        }
     }
 
     private static void addCandidates(
