@@ -33,6 +33,12 @@ interface SearchHistoryDAO : BasicDAO<SearchHistoryEntry> {
     @Query("SELECT * FROM search_history WHERE service_id = :serviceId ORDER BY creation_date DESC")
     override fun listByService(serviceId: Int): Flowable<List<SearchHistoryEntry>>
 
+    @Query("SELECT * FROM search_history WHERE service_id = :serviceId ORDER BY creation_date DESC LIMIT :limit")
+    fun getRecentEntriesByService(
+        serviceId: Int,
+        limit: Int
+    ): Flowable<List<SearchHistoryEntry>>
+
     @Query(
         """
         SELECT search FROM search_history WHERE search LIKE :query ||

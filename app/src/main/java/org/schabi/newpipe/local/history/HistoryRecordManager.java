@@ -177,6 +177,16 @@ public class HistoryRecordManager {
         return streamHistoryTable.getHistorySortedById().subscribeOn(Schedulers.io());
     }
 
+    public Single<List<StreamHistoryEntry>> getRecentStreamHistoryForService(
+            final int serviceId, final int limit) {
+        if (!isStreamHistoryEnabled()) {
+            return Single.just(List.of());
+        }
+        return streamHistoryTable.getRecentHistoryForService(serviceId, limit)
+                .firstOrError()
+                .subscribeOn(Schedulers.io());
+    }
+
     public Flowable<List<StreamStatisticsEntry>> getStreamStatistics() {
         return streamHistoryTable.getStatistics().subscribeOn(Schedulers.io());
     }
@@ -224,6 +234,23 @@ public class HistoryRecordManager {
         return query.length() > 0
                 ? searchHistoryTable.getSimilarEntries(query, similarQueryLimit)
                 : searchHistoryTable.getUniqueEntries(uniqueQueryLimit);
+    }
+
+    public Single<List<String>> getRecentSearchesForService(
+            final int serviceId, final int limit) {
+        if (!isSearchHistoryEnabled()) {
+            return Single.just(List.of());
+        }
+        return searchHistoryTable.getRecentEntriesByService(serviceId, limit)
+                .firstOrError()
+                .map(entries -> entries.stream()
+                        .map(SearchHistoryEntry::getSearch)
+                        .filter(search -> search != null && !search.isBlank())
+                        .map(String::trim)
+                        .distinct()
+                        .limit(limit)
+                        .toList())
+                .subscribeOn(Schedulers.io());
     }
 
     private boolean isSearchHistoryEnabled() {

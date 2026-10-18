@@ -1,6 +1,7 @@
 package org.schabi.newpipe.settings.tabs;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import static java.util.Objects.requireNonNull;
@@ -31,6 +32,14 @@ public class TabsJsonHelperTest {
         final String nullSource = null;
         items = TabsJsonHelper.getTabsFromJson(nullSource);
         assertEquals(items, defaultTabs);
+    }
+
+    @Test
+    public void testDefaultTabsStartWithRecommendations() {
+        assertEquals(Tab.Type.RECOMMENDATIONS.getTabId(),
+                TabsJsonHelper.getDefaultTabs().get(0).getTabId());
+        assertFalse(TabsJsonHelper.getDefaultTabs().stream()
+                .anyMatch(tab -> tab instanceof Tab.DefaultKioskTab));
     }
 
     @Test

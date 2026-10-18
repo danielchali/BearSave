@@ -23,6 +23,7 @@ import org.schabi.newpipe.fragments.list.channel.ChannelFragment;
 import org.schabi.newpipe.fragments.list.kiosk.DefaultKioskFragment;
 import org.schabi.newpipe.fragments.list.kiosk.KioskFragment;
 import org.schabi.newpipe.fragments.list.playlist.PlaylistFragment;
+import org.schabi.newpipe.fragments.list.recommendations.RecommendationsFragment;
 import org.schabi.newpipe.local.bookmark.BookmarkFragment;
 import org.schabi.newpipe.local.feed.FeedFragment;
 import org.schabi.newpipe.local.history.StatisticsPlaylistFragment;
@@ -157,6 +158,7 @@ public abstract class Tab {
 
     public enum Type {
         BLANK(new BlankTab()),
+        RECOMMENDATIONS(new RecommendationsTab()),
         DEFAULT_KIOSK(new DefaultKioskTab()),
         SUBSCRIPTIONS(new SubscriptionsTab()),
         FEED(new FeedTab()),
@@ -257,6 +259,31 @@ public abstract class Tab {
         @Override
         public FeedFragment getFragment(final Context context) {
             return new FeedFragment();
+        }
+    }
+
+    public static class RecommendationsTab extends Tab {
+        public static final int ID = 10;
+
+        @Override
+        public int getTabId() {
+            return ID;
+        }
+
+        @Override
+        public String getTabName(final Context context) {
+            return context.getString(R.string.recommendations_title);
+        }
+
+        @DrawableRes
+        @Override
+        public int getTabIconRes(final Context context) {
+            return R.drawable.ic_whatshot;
+        }
+
+        @Override
+        public RecommendationsFragment getFragment(final Context context) {
+            return new RecommendationsFragment();
         }
     }
 

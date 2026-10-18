@@ -21,6 +21,7 @@ import org.schabi.newpipe.settings.tabs.Tab;
 import org.schabi.newpipe.settings.tabs.TabsManager;
 import org.schabi.newpipe.util.DeviceUtils;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
@@ -240,6 +241,27 @@ public final class SettingMigrations {
         }
     };
 
+    private static final Migration MIGRATION_9_10 = new Migration(9, 10) {
+        @Override
+        protected void migrate(@NonNull final Context context) {
+            final TabsManager tabsManager = TabsManager.getManager(context);
+            final List<Tab> tabs = tabsManager.getTabs();
+            final List<Tab> updatedTabs = new ArrayList<>();
+            updatedTabs.add(Tab.Type.RECOMMENDATIONS.getTab());
+            tabs.stream()
+                    .filter(tab -> !(tab instanceof Tab.RecommendationsTab))
+                    .filter(tab -> !(tab instanceof Tab.DefaultKioskTab))
+                    .filter(tab -> !(tab instanceof Tab.KioskTab kioskTab
+                            && kioskTab.getKioskServiceId() == YouTube.getServiceId()
+                            && "live".equals(kioskTab.getKioskId())))
+                    .forEach(updatedTabs::add);
+
+            if (!tabs.equals(updatedTabs)) {
+                tabsManager.saveTabs(updatedTabs);
+            }
+        }
+    };
+
     /**
      * List of all implemented migrations.
      * <p>
@@ -256,12 +278,13 @@ public final class SettingMigrations {
             MIGRATION_6_7,
             MIGRATION_7_8,
             MIGRATION_8_9,
+            MIGRATION_9_10,
     };
 
     /**
      * Version number for preferences. Must be incremented every time a migration is necessary.
      */
-    private static final int VERSION = 9;
+    private static final int VERSION = 10;
 
 
     static void runMigrationsIfNeeded(@NonNull final Context context) {

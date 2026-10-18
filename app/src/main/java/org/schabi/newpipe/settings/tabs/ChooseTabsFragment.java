@@ -231,6 +231,13 @@ public class ChooseTabsFragment extends Fragment {
                                 tab.getTabIconRes(context)));
                     }
                     break;
+                case RECOMMENDATIONS:
+                    if (!tabList.contains(tab)) {
+                        returnList.add(new ChooseTabListItem(tab.getTabId(),
+                                getString(R.string.recommendations_page_summary),
+                                tab.getTabIconRes(context)));
+                    }
+                    break;
                 case KIOSK:
                     returnList.add(new ChooseTabListItem(tab.getTabId(),
                             getString(R.string.kiosk_page_summary),
