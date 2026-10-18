@@ -262,6 +262,15 @@ public final class SettingMigrations {
         }
     };
 
+    private static final Migration MIGRATION_10_11 = new Migration(10, 11) {
+        @Override
+        protected void migrate(@NonNull final Context context) {
+            sp.edit()
+                    .putBoolean(context.getString(R.string.main_tabs_position_key), true)
+                    .apply();
+        }
+    };
+
     /**
      * List of all implemented migrations.
      * <p>
@@ -279,12 +288,13 @@ public final class SettingMigrations {
             MIGRATION_7_8,
             MIGRATION_8_9,
             MIGRATION_9_10,
+            MIGRATION_10_11,
     };
 
     /**
      * Version number for preferences. Must be incremented every time a migration is necessary.
      */
-    private static final int VERSION = 10;
+    private static final int VERSION = 11;
 
 
     static void runMigrationsIfNeeded(@NonNull final Context context) {
