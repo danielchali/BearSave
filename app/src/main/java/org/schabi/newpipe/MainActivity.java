@@ -183,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (final Exception e) {
             ErrorUtil.showUiErrorSnackbar(this, "Setting up drawer", e);
         }
+        setupBottomNavigation();
         if (DeviceUtils.isTv(this)) {
             FocusOverlayView.setupFocusObserver(this);
         }
@@ -266,6 +267,30 @@ public class MainActivity extends AppCompatActivity {
 
         drawerLayoutBinding.navigation.setNavigationItemSelectedListener(this::drawerItemSelected);
         setupDrawerHeader();
+    }
+
+    private void setupBottomNavigation() {
+        mainBinding.bottomNavigation.setOnItemSelectedListener(item -> {
+            final int itemId = item.getItemId();
+            if (itemId == R.id.navigation_home) {
+                NavigationHelper.gotoMainFragment(getSupportFragmentManager());
+                return true;
+            } else if (itemId == R.id.navigation_subscriptions) {
+                NavigationHelper.openSubscriptionFragment(getSupportFragmentManager());
+                return true;
+            } else if (itemId == R.id.navigation_bookmarks) {
+                NavigationHelper.openBookmarksFragment(getSupportFragmentManager());
+                return true;
+            } else if (itemId == R.id.navigation_downloads) {
+                NavigationHelper.openDownloads(this);
+                return true;
+            } else if (itemId == R.id.navigation_settings) {
+                NavigationHelper.openSettings(this);
+                return true;
+            }
+            return false;
+        });
+        mainBinding.bottomNavigation.setSelectedItemId(R.id.navigation_home);
     }
 
     /**
@@ -354,15 +379,21 @@ public class MainActivity extends AppCompatActivity {
     private void tabSelected(final MenuItem item) {
         switch (item.getItemId()) {
             case ITEM_ID_SUBSCRIPTIONS:
+                mainBinding.bottomNavigation.getMenu().findItem(R.id.navigation_subscriptions)
+                        .setChecked(true);
                 NavigationHelper.openSubscriptionFragment(getSupportFragmentManager());
                 break;
             case ITEM_ID_FEED:
                 NavigationHelper.openFeedFragment(getSupportFragmentManager());
                 break;
             case ITEM_ID_BOOKMARKS:
+                mainBinding.bottomNavigation.getMenu().findItem(R.id.navigation_bookmarks)
+                        .setChecked(true);
                 NavigationHelper.openBookmarksFragment(getSupportFragmentManager());
                 break;
             case ITEM_ID_DOWNLOADS:
+                mainBinding.bottomNavigation.getMenu().findItem(R.id.navigation_downloads)
+                        .setChecked(true);
                 NavigationHelper.openDownloads(this);
                 break;
             case ITEM_ID_HISTORY:
@@ -387,6 +418,8 @@ public class MainActivity extends AppCompatActivity {
     private void optionsAboutSelected(final MenuItem item) {
         switch (item.getItemId()) {
             case ITEM_ID_SETTINGS:
+                mainBinding.bottomNavigation.getMenu().findItem(R.id.navigation_settings)
+                        .setChecked(true);
                 NavigationHelper.openSettings(this);
                 break;
             case ITEM_ID_DONATION:

@@ -59,6 +59,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import org.schabi.newpipe.BuildConfig;
 import org.schabi.newpipe.R;
+import org.schabi.newpipe.download.LocalFilePlayerActivity;
 import org.schabi.newpipe.error.ErrorInfo;
 import org.schabi.newpipe.error.ErrorUtil;
 import org.schabi.newpipe.error.UserAction;
@@ -362,6 +363,16 @@ public class MissionAdapter extends Adapter<ViewHolder> implements Handler.Callb
         chooserIntent.addFlags(FLAG_GRANT_PREFIX_URI_PERMISSION);
 
         ShareUtils.openIntentInApp(mContext, chooserIntent);
+    }
+
+    private void playInApp(@NonNull final Mission mission) {
+        if (checkInvalidFile(mission)) return;
+
+        final Intent playerIntent = new Intent(mContext, LocalFilePlayerActivity.class)
+                .setDataAndType(resolveShareableUri(mission), resolveMimeType(mission))
+                .putExtra(LocalFilePlayerActivity.IntentExtras.TITLE, mission.storage.getName())
+                .addFlags(FLAG_GRANT_READ_URI_PERMISSION | FLAG_GRANT_PREFIX_URI_PERMISSION);
+        mContext.startActivity(playerIntent);
     }
 
     private void shareFile(Mission mission) {
@@ -902,7 +913,7 @@ public class MissionAdapter extends Adapter<ViewHolder> implements Handler.Callb
 
             itemView.setOnClickListener(v -> {
                 if (item.mission instanceof FinishedMission)
-                    viewWithFileProvider(item.mission);
+                    playInApp(item.mission);
             });
 
             itemView.setOnLongClickListener(v -> {

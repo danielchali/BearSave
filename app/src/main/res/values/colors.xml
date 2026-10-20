@@ -5,6 +5,7 @@
     <color name="defaultIconTint">@color/black</color>
 
     <color name="ic_launcher_background">#06214E</color>
+    <color name="bearsave_splash_green">#2E7D32</color>
 
     <color name="placeholder_background">#999999</color>
     <color name="placeholder_foreground">#6C6C6C</color>
