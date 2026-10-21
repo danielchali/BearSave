@@ -190,7 +190,7 @@ public class SeekbarPreviewThumbnailHolder {
             // createBitmap allows itself to return the original object that is was created with
             // this leads to recycled bitmaps being returned (if they are identical)
             // Reference: https://stackoverflow.com/a/23683075 + first comment
-            // Fixes: https://github.com/TeamNewPipe/NewPipe/issues/11461
+            // Fixes:
             return cutOutBitmap == srcBitMap
                     ? cutOutBitmap.copy(Bitmap.Config.ARGB_8888, true) : cutOutBitmap;
         };

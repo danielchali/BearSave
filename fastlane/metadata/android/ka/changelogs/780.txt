@@ -3,10 +3,10 @@
  გაუმჯობესებული
  • დამატებულია ვარიანტი #2550 დაკვრის მდგომარეობის გასასუფთავებლად
  • დამალული დირექტორიების ჩვენება ფაილის ამომრჩეველში #2591
- • მხარდაჭერილი URL-ები `invidio.us`-დან, რომლებიც გაიხსნება NewPipe #2488-ით
- • დაამატეთ მხარდაჭერა `music.youtube.com` URL-ებისთვის TeamNewPipe/NewPipeExtractor#194
+ • მხარდაჭერილი URL-ები `invidio.us`-დან, რომლებიც გაიხსნება BearTube #2488-ით
+ • დაამატეთ მხარდაჭერა `music.youtube.com` URL-ებისთვის TeamBearTube/BearTubeExtractor#194
 
  დაფიქსირდა
  • [YouTube] გაასწორა 'java.lang.IllegalArgumentException #192
- • [YouTube] დაფიქსირდა პირდაპირი სტრიმინგები არ მუშაობს TeamNewPipe/NewPipeExtractor#195
+ • [YouTube] დაფიქსირდა პირდაპირი სტრიმინგები არ მუშაობს TeamBearTube/BearTubeExtractor#195
  • დაფიქსირდა მუშაობის პრობლემა Android Pie-ში #2592 ნაკადის ჩამოტვირთვისას

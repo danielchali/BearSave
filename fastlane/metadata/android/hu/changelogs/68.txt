@@ -27,5 +27,5 @@
   - a linkek a videó leírásában
   - Figyelmeztetés megjelenítése, ha valaki külső SD-kártyára próbál letölteni
   - a semmi sem jelenik meg kivétel jelentést vált ki
-  - A bélyegkép nem jelenik meg az Android 8.1 háttérlejátszóban [lásd itt](https://github.com/TeamNewPipe/NewPipe/issues/943)
+  - A bélyegkép nem jelenik meg az Android 8.1 háttérlejátszóban lásd itt
 - a műsorszóró vevőregisztrációja. Bezárva a #1641.

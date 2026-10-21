@@ -1,1 +1,1 @@
-NewPipe kasu arraro batzuetan hastea eragozten zuen datu base migrazioa konponduta.
+BearTube kasu arraro batzuetan hastea eragozten zuen datu base migrazioa konponduta.

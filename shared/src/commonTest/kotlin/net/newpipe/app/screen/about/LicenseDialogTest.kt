@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2026 NewPipe e.V. <https://newpipe-ev.de>
+ * SPDX-FileCopyrightText: 2026 NewPipe e.V. <>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -28,7 +28,7 @@ class LicenseDialogTest {
         val license = License(
             name = "NewPipe e.V.",
             spdxID = "GPL-3.0-or-later",
-            website = "https://newpipe-ev.de/"
+            website = ""
         )
         var websiteActionClicked = false
         setContent {

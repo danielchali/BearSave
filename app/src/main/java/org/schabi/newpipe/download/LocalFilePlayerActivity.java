@@ -14,7 +14,7 @@ import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ui.PlayerView;
 
-/** Plays completed downloads inside BearSave without leaving the app. */
+/** Plays completed downloads inside BearTube without leaving the app. */
 public class LocalFilePlayerActivity extends AppCompatActivity {
     private ExoPlayer player;
 

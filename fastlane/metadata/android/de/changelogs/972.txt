@@ -7,7 +7,7 @@ Verbessert
 Korrekte Unterstützung des Storage-Access-Frameworks
 Bessere Fehlerbehandlung von nicht verfügbaren und geschlossenen Kanälen
 Das Android-Freigabefenster für Nutzer von Android 10+ zeigt nun den Titel des Inhalts an
-Invidious-Instanzen aktualisiert und Unterstützung von Piped-Links 
+Invidious-Instanzen aktualisiert und Unterstützung von Piped-Links
 
 Behoben
 [YouTube] Altersbeschränkte Inhalte

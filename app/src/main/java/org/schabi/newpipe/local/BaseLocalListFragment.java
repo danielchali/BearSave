@@ -213,7 +213,7 @@ public abstract class BaseLocalListFragment<I, N> extends BaseStateFragment<I>
     }
 
     @Deprecated(since = "Calling this method with `true` may cause crashes, see "
-            + "https://github.com/TeamNewPipe/NewPipe/pull/12996#pullrequestreview-3713317115")
+            + "")
     @Override
     public void showListFooter(final boolean show) {
         if (itemsList == null) {

@@ -1,7 +1,7 @@
 ### Vylepšenia
-- Nastavenia importu/exportu #1333 
-- Zníženie overdrawu (zlepšenie výkonu) #1371 
-- Malé vylepšenia kódu #1375 
+- Nastavenia importu/exportu #1333
+- Zníženie overdrawu (zlepšenie výkonu) #1371
+- Malé vylepšenia kódu #1375
 - Všetko ohľadom GDPR #1420
 
 ### Opravené

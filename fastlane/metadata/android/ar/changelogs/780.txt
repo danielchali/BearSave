@@ -3,10 +3,10 @@
 محسّن
 • تمت إضافة خيار لمسح حالات التشغيل #2550
 • إظهار الدلائل المخفية في منتقي الملفات #2591
-• دعم عناوين URL من مثيلات "invidio.us" ليتم فتحها باستخدام NewPipe  #2488 
-• أضف دعمًا لـ `music.youtube.com` URLs TeamNewPipe/NewPipeمستخرج#194
+• دعم عناوين URL من مثيلات "invidio.us" ليتم فتحها باستخدام BearTube  #2488
+• أضف دعمًا لـ `music.youtube.com` URLs TeamBearTube/BearTubeمستخرج#194
 
 ثابت
 • [موقع YouTube] ثابت 'java.lang.IllegalArgumentException #192
-• [YouTube] البث المباشر الثابت لا يعمل TeamNewPipe/NewPipeExtractor#195
+• [YouTube] البث المباشر الثابت لا يعمل TeamBearTube/BearTubeExtractor#195
 • تم إصلاح مشكلة الأداء في أندرويد عند تنزيل البث #2592

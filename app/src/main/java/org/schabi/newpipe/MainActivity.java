@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
         ThemeHelper.setTheme(this, ServiceHelper.getSelectedServiceId(this));
 
         // Fixes text color turning black in dark/black mode:
-        // https://github.com/TeamNewPipe/NewPipe/issues/12016
+        //
         // For further reference see: https://issuetracker.google.com/issues/37124582
         if (DeviceUtils.supportsWebView()) {
             try {
@@ -1087,7 +1087,7 @@ public class MainActivity extends AppCompatActivity {
 
         // If we use setNegativeButton, dialog will close after pressing the button,
         // but we want it to close only when positive button is pressed
-        final var blogpostUrl = "https://newpipe.net/blog/pinned/announcement/drop-android-5/";
+        final var blogpostUrl = "";
         dialog.getButton(AlertDialog.BUTTON_NEGATIVE)
                 .setOnClickListener(v -> ShareUtils.openUrlInBrowser(this, blogpostUrl));
     }

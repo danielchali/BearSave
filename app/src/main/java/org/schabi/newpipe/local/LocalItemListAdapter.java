@@ -208,7 +208,7 @@ public class LocalItemListAdapter extends RecyclerView.Adapter<RecyclerView.View
     }
 
     @Deprecated(since = "Calling this method with `true` may cause crashes, see "
-            + "https://github.com/TeamNewPipe/NewPipe/pull/12996#pullrequestreview-3713317115")
+            + "")
     public void showFooter(final boolean show) {
         if (DEBUG) {
             Log.d(TAG, "showFooter() called with: show = [" + show + "]");

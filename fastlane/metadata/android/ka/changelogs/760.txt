@@ -12,8 +12,8 @@
  • დააფიქსირეთ ქრება ღილაკები ჩამოტვირთვების ხედში აპების გადართვისას #2487
  • დაკვრის პოზიციის დაფიქსირება შენახულია, თუმცა ნახვის ისტორია გამორთულია
  • დააფიქსირეთ შემცირებული შესრულება, რომელიც გამოწვეულია დაკვრის პოზიციით სიის ხედებში #2517
- • [Extractor] Fix ReCaptchaActivity #2527, TeamNewPipe/NewPipeExtractor#186
- • [Extractor] [YouTube] შეასწორეთ შემთხვევითი ძიების შეცდომა, როდესაც დასაკრავი სიები შედეგებშია TeamNewPipe/NewPipeExtractor#185
+ • [Extractor] Fix ReCaptchaActivity #2527, TeamBearTube/BearTubeExtractor#186
+ • [Extractor] [YouTube] შეასწორეთ შემთხვევითი ძიების შეცდომა, როდესაც დასაკრავი სიები შედეგებშია TeamBearTube/BearTubeExtractor#185
 
 
 
@@ -39,5 +39,5 @@
  • არ გატეხოთ, როდესაც აპის განახლება ვერ ხერხდება (GitHub ვერსია) #2423
  • დაფიქსირებული ჩამოტვირთვები დარჩა 99.9% #2440
  • განაახლეთ სათამაშო რიგის მეტამონაცემები #2453
- • [SoundCloud] გამოსწორდა ავარია დასაკრავი სიების ჩატვირთვისას TeamNewPipe/NewPipeExtractor#170
- • [YouTube] ფიქსირებული ხანგრძლივობის გარჩევა შეუძლებელია TeamNewPipe/NewPipeExtractor#177
+ • [SoundCloud] გამოსწორდა ავარია დასაკრავი სიების ჩატვირთვისას TeamBearTube/BearTubeExtractor#170
+ • [YouTube] ფიქსირებული ხანგრძლივობის გარჩევა შეუძლებელია TeamBearTube/BearTubeExtractor#177

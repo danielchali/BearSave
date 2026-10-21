@@ -104,8 +104,8 @@ class NewVersionWorker(
             }
         }
 
-        // Make a network request to get latest NewPipe data.
-        val response = DownloaderImpl.getInstance().get(NEWPIPE_API_URL)
+        // Make a network request to get latest BearTube data.
+        val response = DownloaderImpl.getInstance().get(BEARTUBE_API_URL)
         handleResponse(response)
     }
 
@@ -135,7 +135,7 @@ class NewVersionWorker(
             val apkLocationUrl = newpipeVersionInfo.getString("apk")
             compareAppVersionAndShowNotification(versionName, apkLocationUrl, versionCode)
         } catch (e: JsonParserException) {
-            // Most likely something is wrong in data received from NEWPIPE_API_URL.
+            // Most likely something is wrong in data received from BEARTUBE_API_URL.
             // Do not alarm user and fail silently.
             if (DEBUG) {
                 Log.w(TAG, "Could not get NewPipe API: invalid json", e)
@@ -159,12 +159,12 @@ class NewVersionWorker(
     companion object {
         private val DEBUG = MainActivity.DEBUG
         private val TAG = NewVersionWorker::class.java.simpleName
-        private const val NEWPIPE_API_URL = "https://newpipe.net/api/data.json"
+        private const val BEARTUBE_API_URL = ""
         private const val IS_MANUAL = "isManual"
 
         /**
          * Start a new worker which checks if all conditions for performing a version check are met,
-         * fetches the API endpoint [.NEWPIPE_API_URL] containing info about the latest NewPipe
+         * fetches the API endpoint [.BEARTUBE_API_URL] containing info about the latest BearTube
          * version and displays a notification about an available update if one is available.
          * <br></br>
          * Following conditions need to be met, before data is requested from the server:

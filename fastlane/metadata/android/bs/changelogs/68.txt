@@ -27,5 +27,5 @@
 - Ispravljeni linkovi u opisu videozapisa
 - Prikaži upozorenje kada neko pokuša preuzeti na eksternu sd karticu
 - ispravljen izuzetak koji se ne prikazuje, a pokreće izvještaj
-- sličica se ne prikazuje u pozadinskom playeru za Android 8.1 [pogledajte ovdje](https://github.com/TeamNewPipe/NewPipe/issues/943)
+- sličica se ne prikazuje u pozadinskom playeru za Android 8.1 pogledajte ovdje
 - Ispravljeno registracija prijemnika emitiranja. Zatvoreno #1641.

@@ -1,4 +1,4 @@
-0.17.2 Dəyişiklikləri 
+0.17.2 Dəyişiklikləri
 
-Düzəlt 
+Düzəlt
 • Düzəldi. Heç bir video mövcud deyildi

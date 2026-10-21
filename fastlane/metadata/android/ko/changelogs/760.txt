@@ -12,8 +12,8 @@
 • 앱 전환 시 다운로드 보기에서 버튼이 사라지는 문제 수정 #2487
 • 시청 기록이 비활성화되어 있어도 고정 재생 위치가 저장됩니다.
 • 목록 보기의 재생 위치로 인해 성능이 저하되는 문제 수정 #2517
-• [추출기] ReCaptchaActivity #2527, TeamNewPipe/NewPipeExtractor#186 수정
-• [Extractor] [YouTube] 결과에 재생목록이 있을 때 일반 검색 오류 수정 TeamNewPipe/NewPipeExtractor#185
+• [추출기] ReCaptchaActivity #2527, TeamBearTube/BearTubeExtractor#186 수정
+• [Extractor] [YouTube] 결과에 재생목록이 있을 때 일반 검색 오류 수정 TeamBearTube/BearTubeExtractor#185
 
 
 
@@ -39,5 +39,5 @@
 • 앱 업데이트 확인 실패 시 충돌 방지(GitHub 버전) #2423
 • 다운로드가 99.9%에서 멈추는 현상 수정 #2440
 • 재생 대기열 메타데이터 업데이트 #2453
-• [SoundCloud] 재생 목록을 로드할 때 발생하는 충돌 수정 TeamNewPipe/NewPipeExtractor#170
-• [YouTube] 고정 기간은 TeamNewPipe/NewPipeExtractor#177로 파싱할 수 없습니다.
+• [SoundCloud] 재생 목록을 로드할 때 발생하는 충돌 수정 TeamBearTube/BearTubeExtractor#170
+• [YouTube] 고정 기간은 TeamBearTube/BearTubeExtractor#177로 파싱할 수 없습니다.

@@ -13,7 +13,7 @@
 为暗黑主题适配导航栏#2569
 修复
 修复悬浮窗播放器按下另一根手指后无法移动#2772
-允许播放列表缺少上传者,并修复相关崩溃#2724,Extractor#219 
+允许播放列表缺少上传者,并修复相关崩溃#2724,Extractor#219
 在Android4.4上启用TLS1.1/1.2,与MediaCCC和某些PeerTube服务器连接时,修复TLS握手#2792
 [SoundCloud]修复了client_id提取Extractor#217与音频流提取
 开发

@@ -27,5 +27,5 @@
   - Correggi i collegamenti nella descrizione del video
   - Mostra avviso quando qualcuno tenta di scaricare su sdcard esterna
   - non correggi il rapporto sui trigger di eccezione mostrati
-  - miniatura non mostrata nel lettore in background per Android 8.1 [vedi qui](https://github.com/TeamNewPipe/NewPipe/issues/943)
+  - miniatura non mostrata nel lettore in background per Android 8.1 vedi qui
 - Risolto il problema con la registrazione del ricevitore di trasmissione. Chiude #1641.

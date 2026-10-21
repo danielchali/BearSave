@@ -6,7 +6,7 @@
 
 Javítások
 • Bekerült az izlandi fordítás és sok fordítás frissítve lett
-• Sok más belső javítás 
+• Sok más belső javítás
 
 Javítások
 • Többféle összeomlás javítása

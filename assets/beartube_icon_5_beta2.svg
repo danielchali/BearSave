@@ -2,8 +2,8 @@
 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="svg2" viewBox="0 0 192 192"
-    height="204.8" width="204.8" inkscape:version="0.91 r13725" sodipodi:docname="BETA_new_pipe_icon_5.svg"
-    inkscape:export-filename="/home/the-scrabi/Projects/NewPipe/assets/new_pipe_icon_5.png"
+    height="204.8" width="204.8" inkscape:version="0.91 r13725" sodipodi:docname="beartube_icon_5_beta2.svg"
+    inkscape:export-filename="/home/the-scrabi/Projects/BearTube/assets/beartube_icon_5.png"
     inkscape:export-xdpi="120" inkscape:export-ydpi="120">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -14,13 +14,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
      id="namedview4149"
      showgrid="false"
-     inkscape:zoom="2.5673112"
-     inkscape:cx="105.05076"
-     inkscape:cy="98.81914"
+     inkscape:zoom="3.6307263"
+     inkscape:cx="129.93323"
+     inkscape:cy="102.41566"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -440,7 +440,39 @@
        fy="0.35701406"
        r="88"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00132321,2.1587518,-2.1815784,0.00133718,1.1131155,-0.39216099)" />
+       gradientTransform="matrix(0.00132321,2.1587518,-2.1815784,0.00133718,1.1369825,-1.4250071)" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter4447">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4449" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite4451" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur4453" />
+      <feOffset
+         dx="0"
+         dy="0"
+         result="offset"
+         id="feOffset4455" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite4457" />
+    </filter>
   </defs>
   <metadata
      id="metadata7">
@@ -450,7 +482,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+          <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -493,41 +525,28 @@
      cy="96"
      rx="88"
      ry="87" />
-  <path
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4433)"
-     d="M 62.03771,154.84774 79.885207,143.47161 80.258503,68.06594 126.18321,95.333 92.950545,114.49592 v 21.92836 L 161.9848,95.333 61.944386,36.538494 Z"
-     id="path4234"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccccccccc" />
-  <path
-     style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path4445-5"
-     sodipodi:type="arc"
-     sodipodi:cx="96.001564"
-     sodipodi:cy="96.021866"
-     sodipodi:rx="88"
-     sodipodi:ry="88"
-     sodipodi:start="0.082013054"
-     sodipodi:end="1.9854818"
-     sodipodi:open="true"
-     d="m 183.70578,103.23093 a 88,88 0 0 1 -42.68319,68.40249 88,88 0 0 1 -80.476409,4.92984" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:37.49999619px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#cd201f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="-4.6590595"
-     y="208.67332"
-     id="text3415"
-     sodipodi:linespacing="125%"
-     transform="matrix(0.86357335,-0.50422323,0.50422323,0.86357335,0,0)"><tspan
-       sodipodi:role="line"
-       id="tspan3417"
-       x="-4.6590595"
-       y="208.67332"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.29687309px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#cd201f;fill-opacity:1">BETA</tspan></text>
   <circle
      style="opacity:1;fill:url(#radialGradient4453);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path4445"
-     cx="95.978127"
-     cy="96.021866"
+     cx="96.001984"
+     cy="94.989021"
      r="88" />
+  <path
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4433)"
+     d="m 68.234817,154.58953 17.847497,-11.37613 0.373296,-75.405673 45.92471,27.26706 -33.232668,19.162923 0,21.92836 L 168.18191,95.074787 68.141493,36.280281 Z"
+     id="path4234"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccccc" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:37.49999619px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4447)"
+     x="-141.68971"
+     y="60.340179"
+     id="text4215"
+     sodipodi:linespacing="125%"
+     transform="matrix(0.003067,-0.9999953,0.9999953,0.003067,0,0)"><tspan
+       sodipodi:role="line"
+       id="tspan4217"
+       x="-141.68971"
+       y="60.340179">BETA</tspan></text>
 </svg>

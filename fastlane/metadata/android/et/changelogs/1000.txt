@@ -1,5 +1,5 @@
 Täiendused
-• Esitusloend on kokku/lahtiklikatav 
+• Esitusloend on kokku/lahtiklikatav
 • [PeerTube] `subscribeto.me` serverite lingid toimivad automaatselt
 • Käivitame ajaloost vaid ühe rakenduse instantsi
 

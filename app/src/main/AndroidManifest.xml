@@ -403,7 +403,7 @@
         <meta-data
             android:name="android.webkit.WebView.MetricsOptOut"
             android:value="true" />
-        <!-- see https://github.com/TeamNewPipe/NewPipe/issues/3947 -->
+        <!-- see  -->
         <!-- Version < 3.0. DeX Mode and Screen Mirroring support -->
         <meta-data
             android:name="com.samsung.android.keepalive.density"

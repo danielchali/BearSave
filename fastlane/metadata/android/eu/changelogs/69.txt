@@ -9,7 +9,7 @@
 - Add support for Localization
 
 ### Fixes
-- NewPipe can be used in Finland
+- BearTube can be used in Finland
 - Fix subscription count
 
 ### Known Bugs

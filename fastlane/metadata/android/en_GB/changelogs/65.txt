@@ -8,7 +8,7 @@
 - Updated library version and fixed database backup #1510
 - ExoPlayer 2.8.2 update #1392
   - The playback speed control dialogue has been reworked to support different step sizes for faster speed change.
-  - Added an option to fast forward during pauses in the playback speed control. This should be useful for audiobooks and certain music genres, and can provide a truly seamless experience (and can break up a song with lots of silences).  
+  - Added an option to fast forward during pauses in the playback speed control. This should be useful for audiobooks and certain music genres, and can provide a truly seamless experience (and can break up a song with lots of silences).
   - Overhaul of media source resolution to allow metadata to be passed with the media internally in the player, rather than doing it manually. We now have a single source of metadata, which is directly available at the start of playback.
   - Fixed remote playlist metadata not being updated when new metadata is available when the playlist fragment is opened.
   - Various UI fixes: #1383, background player notification controls are now always white, it is easier to close the popup player by discarding it.

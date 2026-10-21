@@ -17,5 +17,5 @@ Sabit
 - Uygulama güncellemesi kontrolü başarısız olduğunda çökme (GitHub sürümü) #2423
 - İndirmelerin %99,9'da takılması düzeltildi #2440
 - Oynatma kuyruğu meta verilerini güncelleme #2453
-- [SoundCloud] Çalma listeleri yüklenirken oluşan çökme düzeltildi TeamNewPipe/NewPipeExtractor#170
-- [YouTube] Sabit süre ayrıştırılamıyor TeamNewPipe/NewPipeExtractor#177
+- [SoundCloud] Çalma listeleri yüklenirken oluşan çökme düzeltildi TeamBearTube/BearTubeExtractor#170
+- [YouTube] Sabit süre ayrıştırılamıyor TeamBearTube/BearTubeExtractor#177

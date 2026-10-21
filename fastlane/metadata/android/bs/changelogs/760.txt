@@ -12,8 +12,8 @@ Ispravljeno
 • Ispravljeni dugmad koja nestaju u prikazu preuzimanja prilikom prebacivanja aplikacija #2487
 • Ispravljena je greška u poziciji reprodukcije koja se pohranjuje iako je historija gledanja onemogućena
 • Ispravljene smanjene performanse uzrokovane pozicijom reprodukcije u prikazima liste #2517
-• [Extractor] Ispravljena je ReCaptchaActivity #2527, TeamNewPipe/NewPipeExtractor #186
-• [Extractor] [YouTube] Ispravljena je slučajna greška u pretrazi kada su liste za reprodukciju u rezultatima TeamNewPipe/NewPipeExtractor #185
+• [Extractor] Ispravljena je ReCaptchaActivity #2527, TeamBearTube/BearTubeExtractor #186
+• [Extractor] [YouTube] Ispravljena je slučajna greška u pretrazi kada su liste za reprodukciju u rezultatima TeamBearTube/BearTubeExtractor #185
 
 Promjene u verziji 0.17.0
 
@@ -36,5 +36,5 @@ Ispravljeno
 • Nije došlo do pada programa kada provjera ažuriranja aplikacije ne uspije (GitHub verzija) #2423
 • Ispravljena preuzimanja zaglavljena na 99,9% #2440
 • Ažuriranje metapodataka reda za reprodukciju #2453
-• [SoundCloud] Ispravljen pad programa prilikom učitavanja lista za reprodukciju TeamNewPipe/NewPipeExtractor#170
-• [YouTube] Fiksno trajanje se ne može parsirati TeamNewPipe/NewPipeExtractor#177
+• [SoundCloud] Ispravljen pad programa prilikom učitavanja lista za reprodukciju TeamBearTube/BearTubeExtractor#170
+• [YouTube] Fiksno trajanje se ne može parsirati TeamBearTube/BearTubeExtractor#177

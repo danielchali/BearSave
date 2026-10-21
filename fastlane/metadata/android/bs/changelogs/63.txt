@@ -1,7 +1,7 @@
 ### Poboljšanja
-- Postavke za uvoz/izvoz #1333 
-- Smanjite prekoravanje (poboljšanje performansi) #1371 
-- Mala poboljšanja koda #1375 
+- Postavke za uvoz/izvoz #1333
+- Smanjite prekoravanje (poboljšanje performansi) #1371
+- Mala poboljšanja koda #1375
 - Dodaj sve o GDPR #1420
 
 ### Popravljeno

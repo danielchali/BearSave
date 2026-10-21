@@ -5,5 +5,5 @@ Améliorations
 • Ajout d'un commutateur pour le sélecteur de fichiers SAF / hérité #2521
 
 Corrections
-• [Extractor] Correction de ReCaptchaActivity #2527, TeamNewPipe/NewPipeExtractor#186
-• [Extractor] [YouTube] Correction de l'erreur de recherche occasionnelle lorsque les playlists sont dans les résultats TeamNewPipe/NewPipeExtractor#185
+• [Extractor] Correction de ReCaptchaActivity #2527, TeamBearTube/BearTubeExtractor#186
+• [Extractor] [YouTube] Correction de l'erreur de recherche occasionnelle lorsque les playlists sont dans les résultats TeamBearTube/BearTubeExtractor#185

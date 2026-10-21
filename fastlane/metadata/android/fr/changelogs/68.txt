@@ -1,7 +1,7 @@
 # Modifications de la version v0.14.1
 
 ### Corrections
-- Correction d'un problème d'échec du déchiffrement de l'URL d'une vidéo #1659 
+- Correction d'un problème d'échec du déchiffrement de l'URL d'une vidéo #1659
 
 - Correction d'un problème d'extraction incorrecte du lien de description #1657
 
@@ -12,7 +12,7 @@
 - Nouvelle page d'accueil personnalisable #1461
 
 ### Améliorations
-- Refonte des commandes gestuelles #1604 
+- Refonte des commandes gestuelles #1604
 - Nouvelle méthode pour fermer le lecteur contextuel #1597
 
 ### Corrections
@@ -24,7 +24,7 @@
 
 - Correction rapide pour les kiosques sur SoundCloud
 
-- Refactorisation et correction de bugs #1623 
+- Refactorisation et correction de bugs #1623
 
   - Correction des résultats de recherche cyclique  #1562
 
@@ -40,6 +40,6 @@
 
   - Correction d'un rapport d'exception déclenché alors que rien ne s'affichait
 
-  -  Vignette non affichée dans le lecteur en arrière-plan sous Android 8.1 [voir ici](https://github.com/TeamNewPipe/NewPipe/issues/943)
+  -  Vignette non affichée dans le lecteur en arrière-plan sous Android 8.1 voir ici
 
 - Correction de l'enregistrement du récepteur de diffusion. Clôture le ticket n° 1641.

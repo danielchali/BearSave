@@ -190,7 +190,7 @@ public final class SettingMigrations {
         @Override
         protected void migrate(@NonNull final Context context) {
             // YouTube remove the combined Trending kiosk, see
-            // https://github.com/TeamNewPipe/NewPipe/discussions/12445 for more information.
+            //  for more information.
             // If the user has a dedicated YouTube/Trending kiosk tab,
             // it is removed and replaced with the new live kiosk tab.
             // The default trending kiosk tab is not touched

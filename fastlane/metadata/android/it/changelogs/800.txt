@@ -17,9 +17,9 @@ Migliorato
 
 Fisso
 • Risolto un bug che non poteva spostare il popup player se veniva posizionato un altro dito mentre si spostava il popup player #2772
-• Consenti alle playlist manca un caricatore e correggi gli arresti anomali relativi a questo problema #2724, TeamNewPipe/NewPipeExtractor#219
+• Consenti alle playlist manca un caricatore e correggi gli arresti anomali relativi a questo problema #2724, TeamBearTube/BearTubeExtractor#219
 • Abilitazione di TLS1.1/1.2 su dispositivi Android 4.4 (API 19/KitKat) per correggere l'handshake TLS con MediaCCC e alcune istanze PeerTube #2792
-• [SoundCloud] Risolto il problema con l'estrazione di client_id TeamNewPipe/NewPipeExtractor#217
+• [SoundCloud] Risolto il problema con l'estrazione di client_id TeamBearTube/BearTubeExtractor#217
 • [SoundCloud] Correzione dell'estrazione del flusso audio
 
 Sviluppo

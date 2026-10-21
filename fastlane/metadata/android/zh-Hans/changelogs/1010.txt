@@ -1,4 +1,4 @@
-使用 Application Context 修复加入队列操作中的 NullPointerExxeption 
+使用 Application Context 修复加入队列操作中的 NullPointerExxeption
 [YouTube] 修复解析条目时长的问题
 
 更新译文并删除未翻译的语言环境

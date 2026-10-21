@@ -1,4 +1,4 @@
-Yeni 
+Yeni
 • Xəta panelində "Brauzerdə aç" düyməsini əlavə et
 • Kanal qruplarını siyahı kimi göstərmək üçün seçim əlavə et
 • [YouTube] Vaxt möhürü URL-ni paylaşmaq üçün yayım seqmentlərinə uzun kliklə

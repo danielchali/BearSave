@@ -1,11 +1,11 @@
 New
 Playback resume #2288
 • Resume streams where you stopped last time
-Downloader Enhancements #2149 
+Downloader Enhancements #2149
 • Use Storage Access Framework to store downloads on external SD-cards
 • New mp4 muxer
 • Optionally change the download directory before starting a download
-• Respect metered networks 
+• Respect metered networks
 
 
 Improved

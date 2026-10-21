@@ -17,9 +17,9 @@ Poboljšano
 
 Ispravljeno
 • Ispravljena greška koja nije mogla pomicati popup player ako je drugi prst postavljen tokom pomicanja popup playera #2772
-• Omogući liste za reprodukciju kojima nedostaje uploader i ispravi padove povezane s ovim problemom #2724, TeamNewPipe/NewPipeExtractor#219
+• Omogući liste za reprodukciju kojima nedostaje uploader i ispravi padove povezane s ovim problemom #2724, TeamBearTube/BearTubeExtractor#219
 • Omogući TLS1.1/1.2 na Android 4.4 uređajima (API 19/KitKat) za ispravljanje TLS rukovanja s MediaCCC i nekim PeerTube instance #2792
-• [SoundCloud] Ispravljena ekstrakcija client_id-a TeamNewPipe/NewPipeExtractor #217
+• [SoundCloud] Ispravljena ekstrakcija client_id-a TeamBearTube/BearTubeExtractor #217
 • [SoundCloud] Ispravljena ekstrakcija audio toka
 
 Razvoj

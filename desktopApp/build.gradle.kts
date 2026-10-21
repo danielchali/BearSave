@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2026 NewPipe e.V. <https://newpipe-ev.de>
+ * SPDX-FileCopyrightText: 2026 NewPipe e.V. <>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -26,8 +26,8 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = NEWPIPE_APPLICATION_ID_NEW
-            packageVersion = NEWPIPE_VERSION_NAME
+            packageName = BEARTUBE_APPLICATION_ID_NEW
+            packageVersion = BEARTUBE_VERSION_NAME
         }
     }
 }

@@ -97,8 +97,8 @@
     <string name="settings_category_history_title">Historik och cacheminne</string>
     <string name="undo">Ångra</string>
     <string name="play_all">Spela alla</string>
-    <string name="notification_channel_name">BearSave-avisering</string>
-    <string name="notification_channel_description">Aviseringar för BearSaves spelare</string>
+    <string name="notification_channel_name">BearTube-avisering</string>
+    <string name="notification_channel_description">Aviseringar för BearTubes spelare</string>
     <string name="unknown_content">[Okänd]</string>
     <string name="player_stream_failure">Det gick inte att spela upp strömmen</string>
     <string name="player_unrecoverable_failure">Ett allvarligt spelarfel inträffade</string>
@@ -135,7 +135,7 @@
     <string name="msg_name">Filnamn</string>
     <string name="msg_threads">Trådar</string>
     <string name="msg_error">Fel</string>
-    <string name="msg_running">Hämtning i BearSave</string>
+    <string name="msg_running">Hämtning i BearTube</string>
     <string name="msg_running_detail">Tryck för att visa detaljer</string>
     <string name="msg_wait">Vänta…</string>
     <string name="msg_copied">Kopierat till urklippet</string>
@@ -149,15 +149,15 @@
     <string name="settings_file_replacement_character_title">Ersättningstecken</string>
     <string name="charset_letters_and_digits">Bokstäver och siffror</string>
     <string name="charset_most_special_characters">De flesta specialtecken</string>
-    <string name="title_activity_about">Om BearSave</string>
+    <string name="title_activity_about">Om BearTube</string>
     <string name="title_licenses">Tredjepartslicenser</string>
     <string name="copyright" formatted="true">© %1$s av %2$s under %3$s</string>
     <string name="tab_about">Om och vanliga frågor</string>
     <string name="tab_licenses">Licenser</string>
     <string name="app_description">Lättviktig strömning på Android med fri programvara.</string>
     <string name="view_on_github">Visa på GitHub</string>
-    <string name="app_license_title">BearSaves licens</string>
-    <string name="contribution_encouragement">Oavsett om du har idéer om översättningar, designförbättringar, kodstädning eller omfattande kodändringar är all hjälp välkommen. Ju fler som bidrar, desto bättre blir BearSave!</string>
+    <string name="app_license_title">BearTubes licens</string>
+    <string name="contribution_encouragement">Oavsett om du har idéer om översättningar, designförbättringar, kodstädning eller omfattande kodändringar är all hjälp välkommen. Ju fler som bidrar, desto bättre blir BearTube!</string>
     <string name="read_full_license">Läs hela licensen</string>
     <string name="contribution_title">Bidra</string>
     <string name="title_activity_history">Historik</string>
@@ -180,10 +180,10 @@
     <string name="start_here_on_background">Börja spela i bakgrunden</string>
     <string name="start_here_on_popup">Börja spela i en popup</string>
     <string name="donation_title">Donera</string>
-    <string name="donation_encouragement">BearSave utvecklas av frivilliga som ägnar sin fritid åt att ge dig den bästa användarupplevelsen. Ge något tillbaka genom att hjälpa utvecklarna att göra BearSave ännu bättre medan de njuter av en kopp kaffe.</string>
+    <string name="donation_encouragement">BearTube utvecklas av frivilliga som ägnar sin fritid åt att ge dig den bästa användarupplevelsen. Ge något tillbaka genom att hjälpa utvecklarna att göra BearTube ännu bättre medan de njuter av en kopp kaffe.</string>
     <string name="give_back">Ge tillbaka</string>
     <string name="website_title">Webbplats</string>
-    <string name="website_encouragement">Besök BearSaves webbplats för mer information och nyheter.</string>
+    <string name="website_encouragement">Besök BearTubes webbplats för mer information och nyheter.</string>
     <string name="show_info">Visa information</string>
     <string name="tab_bookmarks">Bokmärkta spellistor</string>
     <string name="controls_add_to_playlist_title">Lägg till i</string>
@@ -235,10 +235,10 @@
     <string name="dismiss">Avfärda</string>
     <string name="rename">Byt namn</string>
     <string name="one_item_deleted">1 objekt borttaget.</string>
-    <string name="privacy_policy_title">BearSaves integritetspolicy</string>
-    <string name="privacy_policy_encouragement">BearSave-projektet tar din integritet på största allvar. Appen samlar därför inte in några uppgifter utan ditt medgivande. \nBearSaves integritetspolicy beskriver vilka uppgifter som skickas och lagras när du skickar en kraschrapport.</string>
+    <string name="privacy_policy_title">BearTubes integritetspolicy</string>
+    <string name="privacy_policy_encouragement">BearTube-projektet tar din integritet på största allvar. Appen samlar därför inte in några uppgifter utan ditt medgivande. \nBearTubes integritetspolicy beskriver vilka uppgifter som skickas och lagras när du skickar en kraschrapport.</string>
     <string name="read_privacy_policy">Läs integritetspolicyn</string>
-    <string name="app_license">BearSave är fri programvara under en copyleft-licens: du får använda, studera, dela och förbättra programmet. Du får distribuera och ändra det enligt villkoren i GNU General Public License, version 3 eller, om du föredrar det, en senare version.</string>
+    <string name="app_license">BearTube är fri programvara under en copyleft-licens: du får använda, studera, dela och förbättra programmet. Du får distribuera och ändra det enligt villkoren i GNU General Public License, version 3 eller, om du föredrar det, en senare version.</string>
     <string name="title_last_played">Senast spelade</string>
     <string name="title_most_played">Mest spelade</string>
     <string name="export_complete_toast">Exporterad</string>
@@ -298,7 +298,7 @@
     <string name="skip_silence_checkbox">Hoppa över tystnad</string>
     <string name="playback_step">Steg</string>
     <string name="playback_reset">Återställ</string>
-    <string name="start_accept_privacy_policy">Läs BearSaves integritetspolicy noggrant. \nDu måste godkänna den för att kunna skicka felrapporten.</string>
+    <string name="start_accept_privacy_policy">Läs BearTubes integritetspolicy noggrant. \nDu måste godkänna den för att kunna skicka felrapporten.</string>
     <string name="accept">Acceptera</string>
     <string name="decline">Avböj</string>
     <string name="limit_data_usage_none_description">Ingen gräns</string>
@@ -313,7 +313,7 @@
     <string name="settings_category_updates_title">Uppdateringar</string>
     <string name="file_deleted">Filen har tagits bort</string>
     <string name="app_update_notification_channel_name">Avisering för appuppdatering</string>
-    <string name="app_update_notification_channel_description">Aviseringar för nya BearSave-versioner</string>
+    <string name="app_update_notification_channel_description">Aviseringar för nya BearTube-versioner</string>
     <string name="download_to_sdcard_error_title">Extern lagring otillgänglig</string>
     <string name="saved_tabs_invalid_json">Det gick inte att läsa in de sparade flikarna. Standardflikarna används.</string>
     <string name="restore_defaults">Återställ standardvärden</string>
@@ -326,7 +326,7 @@
     <string name="list">Lista</string>
     <string name="grid">Rutnät</string>
     <string name="auto">Automatisk</string>
-    <string name="app_update_available_notification_title">En BearSave-uppdatering är tillgänglig!</string>
+    <string name="app_update_available_notification_title">En BearTube-uppdatering är tillgänglig!</string>
     <string name="missions_header_finished">Slutförda</string>
     <string name="paused">pausad</string>
     <string name="queued">köad</string>
@@ -480,7 +480,7 @@
     <string name="error_timeout">Tidsgränsen för anslutningen överskreds</string>
     <string name="error_progress_lost">Hämtningsförloppet gick förlorat eftersom filen togs bort</string>
     <string name="error_insufficient_storage_left">Inget utrymme kvar på enheten</string>
-    <string name="error_postprocessing_stopped">BearSave stängdes medan en fil bearbetades</string>
+    <string name="error_postprocessing_stopped">BearTube stängdes medan en fil bearbetades</string>
     <string name="error_report_open_github_notice">Kontrollera först om det redan finns en felrapport om kraschen. Dubbletter tar tid från arbetet med att åtgärda själva felet.</string>
     <string name="error_report_open_issue_button_text">Rapportera på GitHub</string>
     <string name="copy_for_github">Kopiera formaterad felrapport</string>
@@ -507,11 +507,11 @@
     <string name="notification_action_2_title">Tredje åtgärdsknappen</string>
     <string name="notification_action_1_title">Andra åtgärdsknappen</string>
     <string name="notification_action_0_title">Första åtgärdsknappen</string>
-    <string name="content_not_supported">BearSave stöder ännu inte det här innehållet. \n \nDet kan ändras i en kommande version.</string>
+    <string name="content_not_supported">BearTube stöder ännu inte det här innehållet. \n \nDet kan ändras i en kommande version.</string>
     <string name="playlist_page_summary">Spellistesida</string>
     <string name="never">Aldrig</string>
     <string name="notification_action_nothing">Ingenting</string>
-    <string name="clear_cookie_summary">Rensar kakor som BearSave lagrar när du löser en reCAPTCHA</string>
+    <string name="clear_cookie_summary">Rensar kakor som BearTube lagrar när du löser en reCAPTCHA</string>
     <string name="recaptcha_cookies_cleared">reCAPTCHA-kakor har tagits bort</string>
     <string name="clear_cookie_title">Rensa reCAPTCHA-kakor</string>
     <string name="youtube_restricted_mode_enabled_summary">YouTube erbjuder ett \"Begränsat läge\" som döljer material som potentiellt är olämpligt för barn</string>
@@ -519,14 +519,14 @@
     <string name="notification_action_shuffle">Blanda</string>
     <string name="enqueued">Köad</string>
     <string name="downloads_storage_use_saf_summary_api_29">Från och med Android 10 stöds bara \"Storage Access Framework\"</string>
-    <string name="soundcloud_go_plus_content">Det här är ett SoundCloud Go+-spår, åtminstone i ditt land, så det kan inte strömmas eller hämtas via BearSave.</string>
+    <string name="soundcloud_go_plus_content">Det här är ett SoundCloud Go+-spår, åtminstone i ditt land, så det kan inte strömmas eller hämtas via BearTube.</string>
     <string name="metadata_host">Värd</string>
     <string name="open_website_license">Öppna webbplats</string>
     <string name="tablet_mode_title">Surfplatteläge</string>
     <string name="enqueue_stream">Köa</string>
     <string name="related_items_tab_description">Relaterade objekt</string>
     <string name="hash_channel_name">Avisering för videohashning</string>
-    <string name="feed_use_dedicated_fetch_method_help_text">Tycker du att inläsningen av flödet är för långsamt? Testa i så fall att aktivera snabbinläsning (du kan ändra det i inställningarna eller genom att trycka på knappen nedan). \n \nBearSave erbjuder två strategier för att ladda flödet: \n• Att hämta hela den prenumererade kanalen, vilket är långsamt, men komplett. \n• Att använda en \"särskild tjänsteslutpunkt\", vilket är snabbt, men vanligtvis inte komplett. \n \nSkillnaden mellan de två är att den snabba varianten ofta saknar viss information, som objektets speltid eller typ (kan inte skilja på livevideor och vanliga videor) och den kan returnera färre objekt. \n \nYouTube är ett exempel på en tjänst som erbjuder denna snabba metod genom sitt RSS-flöde. \n \nSå valet handlar i grunden om vad du föredrar: hastighet eller precis information.</string>
+    <string name="feed_use_dedicated_fetch_method_help_text">Tycker du att inläsningen av flödet är för långsamt? Testa i så fall att aktivera snabbinläsning (du kan ändra det i inställningarna eller genom att trycka på knappen nedan). \n \nBearTube erbjuder två strategier för att ladda flödet: \n• Att hämta hela den prenumererade kanalen, vilket är långsamt, men komplett. \n• Att använda en \"särskild tjänsteslutpunkt\", vilket är snabbt, men vanligtvis inte komplett. \n \nSkillnaden mellan de två är att den snabba varianten ofta saknar viss information, som objektets speltid eller typ (kan inte skilja på livevideor och vanliga videor) och den kan returnera färre objekt. \n \nYouTube är ett exempel på en tjänst som erbjuder denna snabba metod genom sitt RSS-flöde. \n \nSå valet handlar i grunden om vad du föredrar: hastighet eller precis information.</string>
     <string name="show_meta_info_summary">Inaktivera för att dölja rutor med metainformation som ytterligare information om strömmens skapare, strömmens innehåll eller sökord</string>
     <string name="show_description_summary">Inaktivera för att dölja videobeskrivning och ytterligare information</string>
     <string name="show_meta_info_title">Visa metainformation</string>
@@ -553,15 +553,15 @@
     <string name="description_select_note">Du kan nu markera text i beskrivningen. Notera att sidan kan flimra och att länkar kan vara oklickbara när du är i markeringsläge.</string>
     <string name="download_has_started">Hämtningen har startat</string>
     <string name="radio">Radio</string>
-    <string name="paid_content">Detta innehåll är endast tillgängligt för användare som har betalat för det, så det kan inte strömmas eller hämtas av BearSave.</string>
+    <string name="paid_content">Detta innehåll är endast tillgängligt för användare som har betalat för det, så det kan inte strömmas eller hämtas av BearTube.</string>
     <string name="account_terminated">Kontot avslutat</string>
-    <string name="youtube_music_premium_content">Denna video är endast tillgänglig för YouTube Music Premium-medlemmar, så den kan inte strömmas eller hämtas av BearSave.</string>
-    <string name="private_content">Detta innehåll är privat, så det kan inte strömmas eller hämtas av BearSave.</string>
+    <string name="youtube_music_premium_content">Denna video är endast tillgänglig för YouTube Music Premium-medlemmar, så den kan inte strömmas eller hämtas av BearTube.</string>
+    <string name="private_content">Detta innehåll är privat, så det kan inte strömmas eller hämtas av BearTube.</string>
     <string name="georestricted_content">Detta innehåll är inte tillgängligt i ditt land.</string>
     <string name="no_app_to_open_intent">Det finns ingen app på enheten som kan öppna detta</string>
     <string name="chapters">Kapitel</string>
     <string name="feed_load_error_account_info">Det gick inte att läsa in flödet för \"%s\".</string>
-    <string name="feed_load_error_terminated">Innehållsskaparens konto har avslutats. \nBearSave kommer inte längre att kunna läsa in flödet. \nVill du avsluta prenumerationen på kanalen?</string>
+    <string name="feed_load_error_terminated">Innehållsskaparens konto har avslutats. \nBearTube kommer inte längre att kunna läsa in flödet. \nVill du avsluta prenumerationen på kanalen?</string>
     <string name="downloads_storage_ask_summary_no_saf_notice">Du kommer att tillfrågas var varje hämtning ska sparas</string>
     <string name="show_channel_details">Visa kanaldetaljer</string>
     <string name="no_dir_yet">Ingen hämtningsmapp har angetts. Välj en standardmapp för hämtningar.</string>
@@ -574,7 +574,7 @@
     <string name="comments_are_disabled">Kommentarer är inaktiverade</string>
     <string name="description_tab_description">Beskrivning</string>
     <string name="comments_tab_description">Kommentarer</string>
-    <string name="restricted_video_no_stream">Denna video är åldersbegränsad. \nPå grund av nya YouTube-regler med åldersgräns för vissa videor kan BearSave inte komma åt några av videons strömmar och kan därmed inte spela upp den.</string>
+    <string name="restricted_video_no_stream">Denna video är åldersbegränsad. \nPå grund av nya YouTube-regler med åldersgräns för vissa videor kan BearTube inte komma åt några av videons strömmar och kan därmed inte spela upp den.</string>
     <string name="show_age_restricted_content_summary">Visa innehåll som på grund av sin åldersgräns (t.ex. 18+) kan vara olämpligt för barn</string>
     <string name="show_description_title">Visa beskrivning</string>
     <string name="open_with">Öppna med</string>
@@ -619,7 +619,7 @@
     <string name="show_crash_the_player_summary">Visar ett kraschalternativ vid användning av spelaren</string>
     <string name="error_report_channel_name">Aviseringar om felrapporter</string>
     <string name="error_report_channel_description">Aviseringar för rapportering av fel</string>
-    <string name="error_report_notification_title">BearSave stötte på ett fel. Tryck för att rapportera det.</string>
+    <string name="error_report_notification_title">BearTube stötte på ett fel. Tryck för att rapportera det.</string>
     <string name="error_report_notification_toast">Ett fel inträffade. Se aviseringen.</string>
     <string name="show_error_snackbar">Visa ett tillfälligt felmeddelande</string>
     <string name="create_error_notification">Skapa en felavisering</string>
@@ -668,7 +668,7 @@
     <string name="sort">Sortera</string>
     <string name="import_subscriptions_hint">Importera eller exportera prenumerationer från trepunktsmenyn</string>
     <string name="fast_mode">Snabbläge</string>
-    <string name="app_update_unavailable_toast">Du använder den senaste versionen av BearSave</string>
+    <string name="app_update_unavailable_toast">Du använder den senaste versionen av BearTube</string>
     <string name="app_update_available_notification_text">Tryck för att hämta %s</string>
     <string name="night_theme_available">Det här alternativet är endast tillgängligt när %s har valts som tema</string>
     <string name="unset_playlist_thumbnail">Ta bort den permanenta miniatyrbilden</string>
@@ -771,11 +771,11 @@
     <string name="no">Nej</string>
     <string name="settings_category_backup_restore_title">Säkerhetskopiering och återställning</string>
     <string name="yes">Ja</string>
-    <string name="auto_update_check_description">BearSave kan automatiskt söka efter nya versioner då och då och meddela dig när de är tillgängliga. \nVill du aktivera det?</string>
+    <string name="auto_update_check_description">BearTube kan automatiskt söka efter nya versioner då och då och meddela dig när de är tillgängliga. \nVill du aktivera det?</string>
     <string name="reset_settings_title">Återställ inställningar</string>
     <string name="reset_settings_summary">Återställ alla inställningar till deras standardvärden</string>
     <string name="reset_all_settings">Om du återställer alla inställningar försvinner dina anpassningar och appen startas om. \n \nVill du fortsätta?</string>
-    <string name="import_settings_vulnerable_format">Inställningarna i exporten använder ett sårbart format som fasades ut i BearSave 0.27.0. Kontrollera att exporten kommer från en betrodd källa och använd framöver exporter från BearSave 0.27.0 eller senare. Stödet för det äldre formatet kommer snart att tas bort helt.</string>
+    <string name="import_settings_vulnerable_format">Inställningarna i exporten använder ett sårbart format som fasades ut i BearTube 0.27.0. Kontrollera att exporten kommer från en betrodd källa och använd framöver exporter från BearTube 0.27.0 eller senare. Stödet för det äldre formatet kommer snart att tas bort helt.</string>
     <string name="audio_track_type_secondary">sekundär</string>
     <string name="share_playlist_as_youtube_temporary_playlist">Dela som tillfällig YouTube-spellista</string>
     <string name="tab_bookmarks_short">Spellistor</string>
@@ -791,7 +791,7 @@
     <string name="migration_info_6_7_title">SoundCloud Topp 50-sida borttagen</string>
     <string name="migration_info_6_7_message">SoundCloud har lagt ner de ursprungliga topp 50-listorna. Motsvarande flik har tagits bort från din startsida.</string>
     <string name="migration_info_7_8_title">YouTubes kombinerade trender har tagits bort</string>
-    <string name="migration_info_7_8_message">YouTube tog bort den kombinerade trendsidan den 21 juli 2025. BearSave ersatte standardtrendsidan med populära direktsändningar. \nDu kan välja andra trendsidor under ”Inställningar &gt; Innehåll &gt; Innehåll på huvudsidan”.</string>
+    <string name="migration_info_7_8_message">YouTube tog bort den kombinerade trendsidan den 21 juli 2025. BearTube ersatte standardtrendsidan med populära direktsändningar. \nDu kan välja andra trendsidor under ”Inställningar &gt; Innehåll &gt; Innehåll på huvudsidan”.</string>
     <string name="trending_gaming">Speltrender</string>
     <string name="trending_podcasts">Populära poddar</string>
     <string name="trending_movies">Populära filmer och serier</string>
@@ -807,7 +807,7 @@
     <string name="youtube_player_http_403">Servern svarade med HTTP-fel 403 under uppspelningen, troligen på grund av en IP-blockering eller problem med avobfuskering av strömnings-URL:er</string>
     <string name="sign_in_confirm_not_bot_error">%1$s vägrade att lämna ut uppgifter och krävde inloggning för att bekräfta att begäran inte kommer från en robot.\n\nDin IP-adress kan ha blockerats tillfälligt av %1$s. Vänta en stund eller byt IP-adress, till exempel genom att slå av och på en VPN-anslutning eller växla mellan Wi-Fi och mobildata.\n\nLäs <a href="%2$s">avsnittet i vanliga frågor</a> för mer information.</string>
     <string name="unsupported_content_in_country">Innehållet är inte tillgängligt i det valda innehållslandet. \nÄndra valet under ”Inställningar &gt; Innehåll &gt; Standardinnehållsland”.</string>
-    <string name="kao_dialog_warning">I augusti 2025 meddelade Google att från och med september 2026 kommer installation av appar att kräva utvecklarverifiering för alla Android-appar på certifierade enheter, inklusive de som installerats utanför Play Store. Eftersom utvecklarna av BearSave inte godkänner detta krav kommer BearSave inte längre att fungera på certifierade Android-enheter efter den tiden.</string>
+    <string name="kao_dialog_warning">I augusti 2025 meddelade Google att från och med september 2026 kommer installation av appar att kräva utvecklarverifiering för alla Android-appar på certifierade enheter, inklusive de som installerats utanför Play Store. Eftersom utvecklarna av BearTube inte godkänner detta krav kommer BearTube inte längre att fungera på certifierade Android-enheter efter den tiden.</string>
     <string name="kao_dialog_more_info">Detaljer</string>
     <string name="kao_solution">Lösning</string>
     <plurals name="export_subscriptions">
@@ -827,7 +827,7 @@
         <item quantity="one">Läser in %d prenumeration…</item>
         <item quantity="other">Läser in %d prenumerationer…</item>
     </plurals>
-    <string name="api23_requirement_dialog_title">BearSave upphör med stödet för Android 5</string>
-    <string name="api23_requirement_dialog_message">Tyvärr är BearSave beroende av ett fåtal bibliotek som slutat stödja Android 5.0 och 5.1. Nästa BearSave-utgåva kommer därför tyvärr bara att fungera på enheter med Android 6 eller senare. Läs mer i blogginlägget.</string>
+    <string name="api23_requirement_dialog_title">BearTube upphör med stödet för Android 5</string>
+    <string name="api23_requirement_dialog_message">Tyvärr är BearTube beroende av ett fåtal bibliotek som slutat stödja Android 5.0 och 5.1. Nästa BearTube-utgåva kommer därför tyvärr bara att fungera på enheter med Android 6 eller senare. Läs mer i blogginlägget.</string>
     <string name="api23_requirement_dialog_blogpost">Blogginlägg</string>
 </resources>

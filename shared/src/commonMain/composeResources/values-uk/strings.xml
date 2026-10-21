@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="navigate_back">Назад</string>
-    <string name="title_activity_about">Про NewPipe</string>
+    <string name="title_activity_about">Про BearTube</string>
     <string name="title_licenses">Ліцензії третіх сторін</string>
     <string name="tab_about">Про нас і ЧаПи</string>
     <string name="tab_licenses">Ліцензії</string>
@@ -10,15 +10,15 @@
     <string name="contribution_encouragement">Незалежно від того, чи у вас є ідеї щодо перекладу, змін дизайну, очищення коду або серйозних доопрацювань — будь-яка допомога завжди вітається. Чим більше зроблено, тим кращим стає проєкт!</string>
     <string name="view_on_github">Переглянути на GitHub</string>
     <string name="donation_title">Пожертвувати</string>
-    <string name="donation_encouragement">NewPipe розробляють волонтери, які у вільний час створюють для вас найкращий користувацький досвід. Підтримайте розробників, щоб допомогти зробити NewPipe ще кращим, поки вони насолоджуються чашкою кави.</string>
+    <string name="donation_encouragement">BearTube розробляють волонтери, які у вільний час створюють для вас найкращий користувацький досвід. Підтримайте розробників, щоб допомогти зробити BearTube ще кращим, поки вони насолоджуються чашкою кави.</string>
     <string name="give_back">Віддячити</string>
     <string name="website_title">Вебсайт</string>
-    <string name="website_encouragement">Відвідайте вебсайт NewPipe, щоб дізнатися більше інформації та новин.</string>
-    <string name="privacy_policy_title">Політика конфіденційності NewPipe</string>
-    <string name="privacy_policy_encouragement">Проєкт NewPipe дуже серйозно ставиться до вашої приватності. Тому застосунок не збирає жодних даних без вашої згоди. \nПолітика приватності NewPipe докладно описує, які дані надсилаються і зберігаються у звіті про збій.</string>
+    <string name="website_encouragement">Відвідайте вебсайт BearTube, щоб дізнатися більше інформації та новин.</string>
+    <string name="privacy_policy_title">Політика конфіденційності BearTube</string>
+    <string name="privacy_policy_encouragement">Проєкт BearTube дуже серйозно ставиться до вашої приватності. Тому застосунок не збирає жодних даних без вашої згоди. \nПолітика приватності BearTube докладно описує, які дані надсилаються і зберігаються у звіті про збій.</string>
     <string name="read_privacy_policy">Ознайомитися з політикою конфіденційності</string>
-    <string name="app_license_title">Ліцензія NewPipe</string>
-    <string name="app_license">NewPipe — це copyleft libre програмне забезпечення: ви можете вільно використовувати, вивчати, поширювати та вдосконалювати його. Зокрема, ви можете розповсюджувати та/або змінювати його на умовах GNU General Public License, опублікованої Free Software Foundation, версії 3 або (на ваш вибір) будь-якої пізнішої версії.</string>
+    <string name="app_license_title">Ліцензія BearTube</string>
+    <string name="app_license">BearTube — це copyleft libre програмне забезпечення: ви можете вільно використовувати, вивчати, поширювати та вдосконалювати його. Зокрема, ви можете розповсюджувати та/або змінювати його на умовах GNU General Public License, опублікованої Free Software Foundation, версії 3 або (на ваш вибір) будь-якої пізнішої версії.</string>
     <string name="read_full_license">Ознайомитися з ліцензією</string>
     <string name="faq_title">Поширені запитання</string>
     <string name="faq_description">Якщо у вас виникають труднощі з використанням застосунку, обов’язково перегляньте відповіді на поширені запитання!</string>

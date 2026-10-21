@@ -6,7 +6,7 @@ Vylepšené
 Opravené
 - Viditeľnosť tlačidla RSS
 - Pády pri náhľadoch
-- Pridanie položky bez miniatúry do playlistu 
+- Pridanie položky bez miniatúry do playlistu
 - Zatváranie okna sťahovania pred jeho zobrazením
 - Vyskakovacie okno zoznamu súvisiacich položiek
 - Poradie v okne pridania do playlistu

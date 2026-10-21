@@ -10,7 +10,7 @@ Al hacer clic en la página de detalles del vídeo, no se transmiten los eventos
 
 Corregido
 Diseño de las respuestas a los comentarios sin foto de perfil.
-Varias correcciones relacionadas con el reproductor en la interfaz de usuario. 
+Varias correcciones relacionadas con el reproductor en la interfaz de usuario.
 [SoundCloud] Transmisiones con ID largos.
 
 ¡Y otras correcciones y mejoras!

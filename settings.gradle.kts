@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2025 NewPipe e.V. <https://newpipe-ev.de>
+ * SPDX-FileCopyrightText: 2025 BearTube contributors <>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
-rootProject.name = "NewPipe"
+rootProject.name = "BearTube"
 
 pluginManagement {
     repositories {
@@ -25,8 +25,8 @@ include(":app") // androidApp
 include(":desktopApp")
 include("shared")
 
-// Use a local copy of NewPipe Extractor by uncommenting the lines below.
-// We assume, that NewPipe and NewPipe Extractor have the same parent directory.
+// Use a local copy of the media extractor by uncommenting the lines below.
+// We assume that the app and media extractor have the same parent directory.
 // If this is not the case, please change the path in includeBuild().
 
 //    includeBuild("../NewPipeExtractor") {

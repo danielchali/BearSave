@@ -1,5 +1,5 @@
 #
-# SPDX-FileCopyrightText: 2025 NewPipe e.V. <https://newpipe-ev.de>
+# SPDX-FileCopyrightText: 2025 NewPipe e.V. <>
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
 
@@ -42,7 +42,7 @@ leakcanary = "2.14"
 lifecycle = "2.11.0"
 localbroadcastmanager = "1.1.0"
 markwon = "4.6.2"
-material = "1.11.0" # TODO: update to newer version after bug is fixed. See https://github.com/TeamNewPipe/NewPipe/pull/13018
+material = "1.11.0" # TODO: update to newer version after bug is fixed. See
 material3 = "1.11.0-alpha07"
 media = "1.7.1"
 mockitoCore = "5.23.0"

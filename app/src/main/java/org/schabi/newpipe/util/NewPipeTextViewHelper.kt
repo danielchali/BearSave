@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2021-2026 NewPipe contributors <https://newpipe.net>
+ * SPDX-FileCopyrightText: 2021-2026 NewPipe contributors <>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 

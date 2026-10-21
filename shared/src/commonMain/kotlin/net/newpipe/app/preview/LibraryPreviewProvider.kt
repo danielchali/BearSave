@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2026 NewPipe e.V. <https://newpipe-ev.de>
+ * SPDX-FileCopyrightText: 2026 NewPipe e.V. <>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -22,11 +22,11 @@ class LibraryPreviewProvider : PreviewParameterProvider<Library> {
                 developers = listOf(
                     Developer(
                         name = "Team NewPipe",
-                        organisationUrl = "https://newpipe.net/"
+                        organisationUrl = ""
                     )
                 ),
                 licenses = listOf("GPL-3.0-or-later"),
-                website = "https://github.com/TeamNewPipe/NewPipeExtractor/"
+                website = ""
             )
         )
 }

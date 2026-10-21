@@ -31,15 +31,15 @@ class LocalPlaylistManagerTest {
 
     @Test
     fun createPlaylist() {
-        val NEWPIPE_URL = "https://newpipe.net/"
+        val BEARTUBE_URL = ""
         val stream = StreamEntity(
             serviceId = 1,
-            url = NEWPIPE_URL,
+            url = BEARTUBE_URL,
             title = "title",
             streamType = StreamType.VIDEO_STREAM,
             duration = 1,
             uploader = "uploader",
-            uploaderUrl = NEWPIPE_URL
+            uploaderUrl = BEARTUBE_URL
         )
 
         val result = manager.createPlaylist("name", listOf(stream))
@@ -63,22 +63,22 @@ class LocalPlaylistManagerTest {
     fun createPlaylist_nonExistentStreamsAreUpserted() {
         val stream = StreamEntity(
             serviceId = 1,
-            url = "https://newpipe.net/",
+            url = "",
             title = "title",
             streamType = StreamType.VIDEO_STREAM,
             duration = 1,
             uploader = "uploader",
-            uploaderUrl = "https://newpipe.net/"
+            uploaderUrl = ""
         )
         database.streamDAO().insert(stream)
         val upserted = StreamEntity(
             serviceId = 1,
-            url = "https://newpipe.net/2",
+            url = "",
             title = "title2",
             streamType = StreamType.VIDEO_STREAM,
             duration = 1,
             uploader = "uploader",
-            uploaderUrl = "https://newpipe.net/"
+            uploaderUrl = ""
         )
 
         val result = manager.createPlaylist("name", listOf(stream, upserted))

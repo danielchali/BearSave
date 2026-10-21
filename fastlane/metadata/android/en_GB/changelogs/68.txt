@@ -27,5 +27,5 @@
   - Fixed links in the video description
   - Display a warning when someone tries to download to an external SD card
   - Fixed the "Nothing displayed" exception that triggers a report
-  - Thumbnail not displayed in background player for android 8.1 [see here] (https://github.com/TeamNewPipe/NewPipe/issues/943)
+  - Thumbnail not displayed in background player for android 8.1 [see here] ()
 - Fixed broadcast receiver registration. Closes #1641.

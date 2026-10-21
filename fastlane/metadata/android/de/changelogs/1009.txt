@@ -8,7 +8,7 @@ Beim Klicken auf die Videodetailseite keine Klickereignisse an darunterliegende 
 
 Behoben
 Layout der Kommentarantworten ohne Profilbild
-Mehrere Player-bezogene Korrekturen der Bedienoberfläche 
+Mehrere Player-bezogene Korrekturen der Bedienoberfläche
 [SoundCloud] Streams mit langen IDs
 
 und weitere Korrekturen und Verbesserungen!

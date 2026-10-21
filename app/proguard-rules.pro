@@ -24,7 +24,7 @@
 -dontwarn okhttp3.**
 -dontwarn okio.**
 
-## See https://github.com/TeamNewPipe/NewPipe/pull/1441
+## See the related library documentation.
 -keepclassmembers class * implements java.io.Serializable {
     static final long serialVersionUID;
     !static !transient <fields>;
@@ -55,5 +55,5 @@
     kotlinx.serialization.KSerializer serializer(...);
 }
 
-# See https://github.com/TeamNewPipe/NewPipe/issues/13508
+# See the related library documentation.
 -keep class org.ocpsoft.prettytime.i18n.Resources* { *; }

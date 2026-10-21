@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2026 NewPipe e.V. <https://newpipe-ev.de>
+ * SPDX-FileCopyrightText: 2026 NewPipe e.V. <>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -16,10 +16,10 @@ class LinkPreviewProvider : PreviewParameterProvider<Link> {
     override val values: Sequence<Link>
         get() = sequenceOf(
             Link(
-                title = "About NewPipe e.V.",
+                title = "About BearTube",
                 description = "A non-profit association founded in Germany in 2022, mostly by TeamNewPipe members.",
                 action = "Join the association",
-                url = "https://newpipe-ev.de/join/"
+                url = ""
             )
         )
 }

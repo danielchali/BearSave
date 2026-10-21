@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2025 NewPipe e.V. <https://newpipe-ev.de>
+ * SPDX-FileCopyrightText: 2025 BearTube contributors <>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -32,25 +32,25 @@ kotlin {
 
 configure<ApplicationExtension> {
     compileSdk {
-        version = release(NEWPIPE_VERSION_SDK_COMPILE_MAJOR) {
-            minorApiLevel = NEWPIPE_VERSION_SDK_COMPILE_MINOR
+        version = release(BEARTUBE_VERSION_SDK_COMPILE_MAJOR) {
+            minorApiLevel = BEARTUBE_VERSION_SDK_COMPILE_MINOR
         }
     }
-    namespace = NEWPIPE_APPLICATION_ID_OLD
+    namespace = BEARTUBE_APPLICATION_ID_OLD
 
     defaultConfig {
         applicationId = DVID_APPLICATION_ID
-        resValue("string", "app_name", "BearSave")
+        resValue("string", "app_name", "BearTube")
         minSdk {
-            version = release(NEWPIPE_VERSION_SDK_MIN)
+            version = release(BEARTUBE_VERSION_SDK_MIN)
         }
         targetSdk {
-            version = release(NEWPIPE_VERSION_SDK_TARGET)
+            version = release(BEARTUBE_VERSION_SDK_TARGET)
         }
 
-        versionCode = System.getProperty("versionCodeOverride")?.toInt() ?: NEWPIPE_VERSION_CODE
+        versionCode = System.getProperty("versionCodeOverride")?.toInt() ?: BEARTUBE_VERSION_CODE
 
-        versionName = NEWPIPE_VERSION_NAME
+        versionName = BEARTUBE_VERSION_NAME
         System.getProperty("versionNameSuffix")?.let { versionNameSuffix = it }
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -63,17 +63,17 @@ configure<ApplicationExtension> {
             // suffix the app id and the app name with git branch name
             if (normalizedWorkingBranch.isEmpty() || workingBranch in defaultBranches) {
                 applicationIdSuffix = ".debug"
-                resValue("string", "app_name", "BearSave Debug")
+                resValue("string", "app_name", "BearTube Debug")
             } else {
                 applicationIdSuffix = ".debug.$normalizedWorkingBranch"
-                resValue("string", "app_name", "BearSave $workingBranch")
+                resValue("string", "app_name", "BearTube $workingBranch")
             }
         }
 
         release {
             System.getProperty("packageSuffix")?.let { suffix ->
                 applicationIdSuffix = suffix
-                resValue("string", "app_name", "BearSave $suffix")
+                resValue("string", "app_name", "BearTube $suffix")
             }
             isMinifyEnabled = true
             isShrinkResources = true
@@ -91,10 +91,10 @@ configure<ApplicationExtension> {
             // suffix the app id and the app name with git branch name
             if (normalizedWorkingBranch.isEmpty() || workingBranch in defaultBranches) {
                 applicationIdSuffix = ".continuous"
-                resValue("string", "app_name", "BearSave Continuous")
+                resValue("string", "app_name", "BearTube Continuous")
             } else {
                 applicationIdSuffix = ".continuous.$normalizedWorkingBranch"
-                resValue("string", "app_name", "BearSave $workingBranch")
+                resValue("string", "app_name", "BearTube $workingBranch")
             }
         }
     }
@@ -208,8 +208,8 @@ afterEvaluate {
 
 sonar {
     properties {
-        property("sonar.projectKey", "TeamNewPipe_NewPipe")
-        property("sonar.organization", "teamnewpipe")
+        property("sonar.projectKey", "danielchali_BearTube")
+        property("sonar.organization", "danielchali")
         property("sonar.host.url", "https://sonarcloud.io")
     }
 }
@@ -218,7 +218,7 @@ dependencies {
     // Desugaring
     coreLibraryDesugaring(libs.android.desugar)
 
-    // NewPipe libraries
+    // BearTube libraries
     implementation(projects.shared)
     implementation(libs.newpipe.nanojson)
     implementation(libs.newpipe.extractor)

@@ -636,7 +636,7 @@
             "name": "androidx.databinding:viewbinding",
             "description": "",
             "developers": [
-                
+
             ],
             "licenses": [
                 "Apache-2.0"
@@ -1719,7 +1719,7 @@
             "artifactVersion": "v0.26.2",
             "name": "NewPipe Extractor",
             "description": "A library for extracting data from streaming websites, used in NewPipe",
-            "website": "https://github.com/TeamNewPipe/NewPipeExtractor",
+            "website": "",
             "developers": [
                 {
                     "name": "Team NewPipe"
@@ -1734,7 +1734,7 @@
             "artifactVersion": "5.0.0",
             "name": "TeamNewPipe/NoNonsense-FilePicker",
             "description": "A file/directory-picker for android. Implemented as a library project.",
-            "website": "https://github.com/TeamNewPipe/NoNonsense-FilePicker",
+            "website": "",
             "developers": [
                 {
                     "name": "Team NewPipe"
@@ -1751,10 +1751,10 @@
             "description": "Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/",
             "website": "http://nexus.sonatype.org/oss-repository-hosting.html/nanojson",
             "developers": [
-                
+
             ],
             "licenses": [
-                
+
             ]
         },
         {
@@ -1778,10 +1778,10 @@
             "name": "com.github.lisawray.groupie:groupie-viewbinding",
             "description": "",
             "developers": [
-                
+
             ],
             "licenses": [
-                
+
             ]
         },
         {
@@ -2004,7 +2004,7 @@
             "description": "Provider-configuration files for ServiceLoader.",
             "website": "https://github.com/google/auto/tree/main/service",
             "developers": [
-                
+
             ],
             "licenses": [
                 "Apache-2.0"
@@ -2017,7 +2017,7 @@
             "description": "Provider-configuration files for ServiceLoader.",
             "website": "https://github.com/google/auto/tree/main/service",
             "developers": [
-                
+
             ],
             "licenses": [
                 "Apache-2.0"
@@ -2030,7 +2030,7 @@
             "description": "Common utilities for creating annotation processors.",
             "website": "https://github.com/google/auto/tree/master/common",
             "developers": [
-                
+
             ],
             "licenses": [
                 "Apache-2.0"
@@ -2043,7 +2043,7 @@
             "description": "JSR305 Annotations for Findbugs",
             "website": "http://findbugs.sourceforge.net/",
             "developers": [
-                
+
             ],
             "licenses": [
                 "Apache-2.0"
@@ -2119,7 +2119,7 @@
             "description": "A set of annotations that provide additional information to the J2ObjC\n    translator to modify the result of translation.",
             "website": "https://github.com/google/j2objc/",
             "developers": [
-                
+
             ],
             "licenses": [
                 "Apache-2.0"

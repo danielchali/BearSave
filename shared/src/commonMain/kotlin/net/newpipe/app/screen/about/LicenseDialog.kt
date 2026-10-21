@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2026 NewPipe e.V. <https://newpipe-ev.de>
+ * SPDX-FileCopyrightText: 2026 NewPipe e.V. <>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -92,7 +92,7 @@ private fun LicenseDialogPreview() {
     LicenseDialog(
         license = License(
             name = "NewPipe",
-            website = "https://newpipe.net/",
+            website = "",
             spdxID = "GPL-3.0-or-later"
         )
     )

@@ -1,6 +1,6 @@
 /*
- * SPDX-FileCopyrightText: 2018-2025 NewPipe contributors <https://newpipe.net>
- * SPDX-FileCopyrightText: 2026 NewPipe e.V. <https://newpipe-ev.de>
+ * SPDX-FileCopyrightText: 2018-2025 NewPipe contributors <>
+ * SPDX-FileCopyrightText: 2026 NewPipe e.V. <>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 

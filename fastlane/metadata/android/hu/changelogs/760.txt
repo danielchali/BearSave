@@ -12,8 +12,8 @@ Javítások
 • App váltásnál a letöltés nézetnél eltűnő gombok javítása #2487
 • Lejátszási pozíció elmentődik, de nem menti az előzményeket
 • Listanézet visszajátszás pozíciója által okozott csökkentett teljesítmény gondok javítása #2517
-• [Kivonatoló] ReCaptchaActivity javítása #2527, TeamNewPipe/NewPipeExtractor#186
-• [Kivonatoló] [YouTube] Lista eredményes keresésnél felmerülő hiba javítása TeamNewPipe/NewPipeExtractor#185
+• [Kivonatoló] ReCaptchaActivity javítása #2527, TeamBearTube/BearTubeExtractor#186
+• [Kivonatoló] [YouTube] Lista eredményes keresésnél felmerülő hiba javítása TeamBearTube/BearTubeExtractor#185
 
 
 
@@ -26,7 +26,7 @@ Letöltő Javítások #2149
 • Tárhely Hozzáférés Keretrendszer használata a külső SD kártyára való mentéshez
 • Új mp4 muxer
 • Opcionálisan megváltoztatható a letöltési könyvtár letöltés előtt
-• Fizetős hálózatok tiszteletben tartása 
+• Fizetős hálózatok tiszteletben tartása
 
 
 Fejlesztések
@@ -36,8 +36,8 @@ Fejlesztések
 
 Javítások
 • Egyes felirat nevek nem jelentek meg #2394
-• Sikertelen frissítés esetén most már nem omlik össze (GitHub verzió) #2423 
+• Sikertelen frissítés esetén most már nem omlik össze (GitHub verzió) #2423
 • Letöltés nem áll meg 99,9%-nál #2440
-• Lejátszási lista metaadat frissítése #2453 
-• [SoundCloud] Lejátszásilista betöltésnél való összeomlás javítása TeamNewPipe/NewPipeExtractor#170
-• [YouTube] Videó hossza nem kiszámítható hiba javítása TeamNewPipe/NewPipeExtractor#177
+• Lejátszási lista metaadat frissítése #2453
+• [SoundCloud] Lejátszásilista betöltésnél való összeomlás javítása TeamBearTube/BearTubeExtractor#170
+• [YouTube] Videó hossza nem kiszámítható hiba javítása TeamBearTube/BearTubeExtractor#177

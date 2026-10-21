@@ -17,9 +17,9 @@
 
 결정된
 • 팝업플레이어 이동 중 다른 손가락을 놓으면 팝업플레이어가 이동되지 않는 버그 수정 #2772
-• 업로더가 없는 재생목록을 허용하고 이 문제 #2724, TeamNewPipe/NewPipeExtractor#219와 관련된 충돌을 해결합니다.
+• 업로더가 없는 재생목록을 허용하고 이 문제 #2724, TeamBearTube/BearTubeExtractor#219와 관련된 충돌을 해결합니다.
 • Android 4.4 기기(API 19/KitKat)에서 TLS1.1/1.2를 활성화하여 MediaCCC 및 일부 PeerTube 인스턴스와의 TLS 핸드셰이크 수정 #2792
-• [SoundCloud] client_id 추출 수정 TeamNewPipe/NewPipeExtractor#217
+• [SoundCloud] client_id 추출 수정 TeamBearTube/BearTubeExtractor#217
 • [SoundCloud] 오디오 스트림 추출 수정
 
 개발

@@ -13,4 +13,4 @@ Cải thiện
 • Sửa lỗi tải kẹt 99.9%
 • Cập nhật metadata hàng phát
 • Sửa lỗi playlist SoundCloud
-• Sửa lỗi đọc thời lượng YouTube TeamNewPipe/NewPipeExtractor#177
+• Sửa lỗi đọc thời lượng YouTube TeamBearTube/BearTubeExtractor#177

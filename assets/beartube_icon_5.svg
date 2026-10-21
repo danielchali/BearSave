@@ -2,9 +2,9 @@
 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="svg2" viewBox="0 0 192 192"
-    height="192" width="192" inkscape:version="0.91 r13725" sodipodi:docname="new_pipe_icon_4.svg"
-    inkscape:export-filename="/home/the-scrabi/Projects/NewPipe/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
-    inkscape:export-xdpi="67.5" inkscape:export-ydpi="67.5">
+    height="204.8" width="204.8" inkscape:version="0.92.1 r" sodipodi:docname="beartube_icon_5.svg"
+    inkscape:export-filename="/home/the-scrabi/Projects/BearTube/assets/beartube_icon_5.png"
+    inkscape:export-xdpi="120" inkscape:export-ydpi="120">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -15,14 +15,14 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1016"
+     inkscape:window-height="1012"
      id="namedview4149"
      showgrid="false"
-     inkscape:zoom="2.2793069"
-     inkscape:cx="74.912287"
-     inkscape:cy="82.673449"
+     inkscape:zoom="1.2836556"
+     inkscape:cx="361.53411"
+     inkscape:cy="-71.516938"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <defs
@@ -76,7 +76,7 @@
          id="feComposite4464" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter4777">
       <feFlood
@@ -141,7 +141,7 @@
          result="composite2" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter4885">
       <feFlood
@@ -206,7 +206,7 @@
          result="composite2" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter4257">
       <feFlood
@@ -271,7 +271,7 @@
          result="composite2" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter4192">
       <feFlood
@@ -303,7 +303,7 @@
          id="feComposite4202" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter4349">
       <feFlood
@@ -335,7 +335,7 @@
          id="feComposite4359" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter4361">
       <feFlood
@@ -367,7 +367,7 @@
          id="feComposite4371" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter4481">
       <feFlood
@@ -399,7 +399,7 @@
          id="feComposite4491" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter4433">
       <feFlood
@@ -440,7 +440,7 @@
        fy="0.35701406"
        r="88"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00132321,2.1587518,-2.1815784,0.00133718,1.1350038,-0.41402508)" />
+       gradientTransform="matrix(0.00132321,2.1587518,-2.1815784,0.00133718,1.1369842,-0.39215567)" />
   </defs>
   <metadata
      id="metadata7">
@@ -450,7 +450,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-          <dc:title />
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -459,55 +459,50 @@
      id="path4144-9"
      r="88"
      cy="104"
-     cx="88" />
+     cx="88"
+     d=""
+     inkscape:connector-curvature="0" />
   <circle
      style="fill:#ff5252;fill-opacity:1;stroke:none;stroke-width:17.10300064;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path4144-6"
      cx="88"
      cy="104"
      r="0" />
-  <g
-     id="g4455">
-    <g
-       style="filter:url(#filter4433)"
-       transform="translate(8,-8)"
-       id="g4416">
-      <circle
-         style="opacity:1;fill:#ff7575;fill-opacity:1;stroke:none;stroke-width:17.10300064;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path4144-67"
-         cx="88"
-         cy="104"
-         r="88" />
-      <path
-         style="opacity:1;fill:#cc4242;fill-opacity:1;stroke:none;stroke-width:17.10300064;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path4144-5"
-         sodipodi:type="arc"
-         sodipodi:cx="88"
-         sodipodi:cy="104"
-         sodipodi:rx="88"
-         sodipodi:ry="88"
-         sodipodi:start="0"
-         sodipodi:end="3.1387981"
-         sodipodi:open="true"
-         d="M 176,104 A 88,88 0 0 1 88.12296,191.99991 88,88 0 0 1 3.4361909e-4,104.24592" />
-      <ellipse
-         style="fill:#ff5252;fill-opacity:1;stroke:none;stroke-width:17.10300064;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path4144"
-         cx="88"
-         cy="104"
-         rx="88"
-         ry="87" />
-      <path
-         inkscape:connector-curvature="0"
-         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:17.10300064;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path4140"
-         d="M 137.53637,104.0664 96.33516,127.80966 55.133958,151.5529 55.17235,104 55.210742,56.447076 96.37361,80.256739 Z" />
-    </g>
-    <circle
-       r="88"
-       cy="96"
-       cx="96"
-       id="path4445"
-       style="opacity:1;fill:url(#radialGradient4453);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  </g>
+  <circle
+     style="opacity:1;fill:#ff7575;fill-opacity:1;stroke:none;stroke-width:17.10300064;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4433)"
+     id="path4144-67"
+     cx="96"
+     cy="96"
+     r="88" />
+  <path
+     style="opacity:1;fill:#cc4242;fill-opacity:1;stroke:none;stroke-width:17.10300064;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4433)"
+     id="path4144-5"
+     sodipodi:type="arc"
+     sodipodi:cx="96"
+     sodipodi:cy="96"
+     sodipodi:rx="88"
+     sodipodi:ry="88"
+     sodipodi:start="0"
+     sodipodi:end="3.1387981"
+     sodipodi:open="true"
+     d="M 184,96 A 88,88 0 0 1 96.12296,183.99991 88,88 0 0 1 8.0003436,96.24592" />
+  <ellipse
+     style="fill:#cd201f;fill-opacity:1;stroke:none;stroke-width:17.10300064;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4433)"
+     id="path4144"
+     cx="96"
+     cy="96"
+     rx="88"
+     ry="87" />
+  <circle
+     style="opacity:1;fill:url(#radialGradient4453);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path4445"
+     cx="96.001991"
+     cy="96.021873"
+     r="88" />
+  <path
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4433)"
+     d="M 62.03771,154.84774 79.885207,143.47161 80.258503,68.06594 126.18321,95.333 92.950545,114.49592 v 21.92836 L 161.9848,95.333 61.944386,36.538494 Z"
+     id="path4234"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccccc" />
 </svg>

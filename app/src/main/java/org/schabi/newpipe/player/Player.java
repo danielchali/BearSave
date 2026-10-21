@@ -718,7 +718,7 @@ public final class Player implements PlaybackListener, Listener {
         final long windowPos = simpleExoPlayer.getCurrentPosition();
         final long duration = simpleExoPlayer.getDuration();
 
-        // No checks due to https://github.com/TeamNewPipe/NewPipe/pull/7195#issuecomment-962624380
+        // No checks due to
         setRecovery(queuePos, MathUtils.clamp(windowPos, 0, duration));
     }
 

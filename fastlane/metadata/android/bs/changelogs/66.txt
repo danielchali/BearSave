@@ -15,7 +15,7 @@
 - Ispravka ažuriranja verzije biblioteke i sigurnosne kopije baze podataka #1510
 - Ažuriranje ExoPlayera 2.8.2 #1392
 - Prerađen dijalog za kontrolu brzine reprodukcije kako bi se podržale različite veličine koraka za bržu promjenu brzine.
-- Dodan je prekidač za premotavanje unaprijed tokom tišina u kontroli brzine reprodukcije. Ovo bi trebalo biti korisno za audio knjige i određene muzičke žanrove i može donijeti zaista besprijekorno iskustvo (i može prekinuti pjesmu s puno tišina =\\). 
+- Dodan je prekidač za premotavanje unaprijed tokom tišina u kontroli brzine reprodukcije. Ovo bi trebalo biti korisno za audio knjige i određene muzičke žanrove i može donijeti zaista besprijekorno iskustvo (i može prekinuti pjesmu s puno tišina =\\).
 - Refaktorisana rezolucija izvora medija kako bi se omogućilo interno prosljeđivanje metapodataka zajedno s medijima u playeru, umjesto ručnog. Sada imamo jedan izvor metapodataka i on je direktno dostupan kada počne reprodukcija.
 - Ispravljeni metapodaci udaljene liste za reprodukciju koji se nisu ažurirali kada su novi metapodaci dostupni prilikom otvaranja fragmenta liste za reprodukciju.
 - Razne ispravke korisničkog interfejsa: #1383, kontrole obavještenja u pozadini playera sada su uvijek bijele, lakše je isključiti iskačući player prebacivanjem.
