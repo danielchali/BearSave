@@ -94,6 +94,10 @@ class NewVersionWorker(
             return
         }
 
+        if (BEARTUBE_API_URL.isBlank()) {
+            return
+        }
+
         if (!inputData.getBoolean(IS_MANUAL, false)) {
             val prefs = PreferenceManager.getDefaultSharedPreferences(applicationContext)
             // Check if the last request has happened a certain time ago
@@ -159,7 +163,7 @@ class NewVersionWorker(
     companion object {
         private val DEBUG = MainActivity.DEBUG
         private val TAG = NewVersionWorker::class.java.simpleName
-        private const val BEARTUBE_API_URL = ""
+        private const val BEARTUBE_API_URL = "https://newpipe.net/api/data.json"
         private const val IS_MANUAL = "isManual"
 
         /**
