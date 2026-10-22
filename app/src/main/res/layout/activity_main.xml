@@ -26,7 +26,7 @@
             android:layout_gravity="center_horizontal"
             app:behavior_hideable="true"
             app:behavior_peekHeight="0dp"
-            app:layout_behavior="org.schabi.beartube.player.gesture.CustomBottomSheetBehavior" />
+            app:layout_behavior="org.schabi.newpipe.player.gesture.CustomBottomSheetBehavior" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
