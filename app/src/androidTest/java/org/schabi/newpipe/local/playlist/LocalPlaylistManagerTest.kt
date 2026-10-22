@@ -63,7 +63,7 @@ class LocalPlaylistManagerTest {
     fun createPlaylist_nonExistentStreamsAreUpserted() {
         val stream = StreamEntity(
             serviceId = 1,
-            url = "",
+            url = "https://example.com/stream/1",
             title = "title",
             streamType = StreamType.VIDEO_STREAM,
             duration = 1,
@@ -73,7 +73,7 @@ class LocalPlaylistManagerTest {
         database.streamDAO().insert(stream)
         val upserted = StreamEntity(
             serviceId = 1,
-            url = "",
+            url = "https://example.com/stream/2",
             title = "title2",
             streamType = StreamType.VIDEO_STREAM,
             duration = 1,
