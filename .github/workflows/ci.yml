@@ -101,12 +101,7 @@ jobs:
           api-level: ${{ matrix.api-level }}
           target: ${{ matrix.target }}
           arch: ${{ matrix.arch }}
-          script: |
-            set +e
-            ./gradlew connectedCheck --stacktrace
-            gradle_status=$?
-            adb logcat -b all -d -v threadtime > emulator-logcat.txt
-            exit "$gradle_status"
+          script: ./gradlew connectedCheck --stacktrace || gradle_status=$?; adb logcat -b all -d -v threadtime > emulator-logcat.txt; exit "${gradle_status:-0}"
 
       - name: Upload test report when tests fail # because the printed out stacktrace (console) is too short, see also #7553
         uses: actions/upload-artifact@v7
