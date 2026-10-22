@@ -13,6 +13,10 @@ plugins {
     alias(libs.plugins.about.libraries)
 }
 
+compose.resources {
+    packageOfResClass = "newpipe.shared.generated.resources"
+}
+
 // Better than adding a third-party dependency for something as simple as this
 // https://stackoverflow.com/a/74771876/8446131
 val buildConfigGenerator by tasks.registering(Sync::class) {
