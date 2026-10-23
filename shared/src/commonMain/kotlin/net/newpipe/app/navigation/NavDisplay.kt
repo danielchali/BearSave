@@ -5,6 +5,12 @@
 
 package net.newpipe.app.navigation
 
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.NavigationBar
+import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSerializable
@@ -42,10 +48,50 @@ fun NavDisplay(
         listOf(saveableStateDecorator, viewModelStoreDecorator)
     }
 
-    NavDisplay(
-        backStack = backstack,
-        onBack = { navigator.navigateUp() },
-        entryDecorators = entryDecorators,
-        entryProvider = koinEntryProvider()
-    )
+    val currentDestination = backstack.lastOrNull() ?: startDestination
+    val destinations = listOf(Destination.About, Destination.Settings)
+
+    Scaffold(
+        modifier = androidx.compose.ui.Modifier.fillMaxSize(),
+        bottomBar = {
+            NavigationBar {
+                destinations.forEach { destination ->
+                    val selected = currentDestination == destination
+                    NavigationBarItem(
+                        selected = selected,
+                        onClick = {
+                            if (!selected) {
+                                backstack.clear()
+                                backstack.add(destination)
+                            }
+                        },
+                        icon = {
+                            Text(if (selected) "●" else "○")
+                        },
+                        label = {
+                            Text(
+                                when (destination) {
+                                    Destination.About -> "About"
+                                    Destination.Settings -> "Settings"
+                                }
+                            )
+                        }
+                    )
+                }
+            }
+        }
+    ) { contentPadding ->
+        androidx.compose.foundation.layout.Box(
+            modifier = androidx.compose.ui.Modifier
+                .fillMaxSize()
+                .padding(contentPadding)
+        ) {
+            NavDisplay(
+                backStack = backstack,
+                onBack = { navigator.navigateUp() },
+                entryDecorators = entryDecorators,
+                entryProvider = koinEntryProvider()
+            )
+        }
+    }
 }
