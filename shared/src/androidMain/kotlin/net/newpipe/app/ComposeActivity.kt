@@ -25,12 +25,18 @@ class ComposeActivity : ComponentActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
 
+        val startDestination = intent.getStringExtra(Constants.INTENT_SCREEN_KEY)
+            ?.let { encodedDestination ->
+                runCatching {
+                    Json.decodeFromString<Destination>(encodedDestination)
+                }.getOrNull()
+            }
+            ?: Destination.About
+
         setContent {
             App(
                 // TODO: Change when everything is in compose and this is the primary activity
-                startDestination = Json.decodeFromString<Destination>(
-                    intent.getStringExtra(Constants.INTENT_SCREEN_KEY)!!
-                ),
+                startDestination = startDestination,
                 onCloseRequest = ::finish
             ) {
                 val view = LocalView.current
