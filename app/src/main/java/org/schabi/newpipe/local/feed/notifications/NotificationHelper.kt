@@ -74,6 +74,10 @@ class NotificationHelper(val context: Context) {
             PendingIntentCompat.getActivity(context, data.pseudoId, intent, 0, false)
         )
 
+        if (!manager.areNotificationsEnabled()) {
+            return
+        }
+
         val avatarIcon =
             CoilHelper.loadBitmapBlocking(context, data.avatarUrl, R.drawable.ic_newpipe_triangle_white)
         summaryBuilder.setLargeIcon(avatarIcon)
@@ -81,9 +85,7 @@ class NotificationHelper(val context: Context) {
         // Show individual stream notifications, set channel icon only if there is actually one
         showStreamNotifications(newStreams, data.serviceId, avatarIcon)
         // Show summary notification
-        if (manager.areNotificationsEnabled()) {
-            manager.notify(data.pseudoId, summaryBuilder.build())
-        }
+        manager.notify(data.pseudoId, summaryBuilder.build())
     }
 
     private fun showStreamNotifications(

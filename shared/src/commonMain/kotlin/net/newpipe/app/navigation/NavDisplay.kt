@@ -6,6 +6,7 @@
 package net.newpipe.app.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSerializable
 import androidx.lifecycle.viewmodel.navigation3.rememberViewModelStoreNavEntryDecorator
 import androidx.navigation3.runtime.rememberSaveableStateHolderNavEntryDecorator
@@ -35,13 +36,16 @@ fun NavDisplay(
         navigator.backstack
     }
 
+    val saveableStateDecorator = rememberSaveableStateHolderNavEntryDecorator()
+    val viewModelStoreDecorator = rememberViewModelStoreNavEntryDecorator()
+    val entryDecorators = remember(saveableStateDecorator, viewModelStoreDecorator) {
+        listOf(saveableStateDecorator, viewModelStoreDecorator)
+    }
+
     NavDisplay(
         backStack = backstack,
         onBack = { navigator.navigateUp() },
-        entryDecorators = listOf(
-            rememberSaveableStateHolderNavEntryDecorator(),
-            rememberViewModelStoreNavEntryDecorator()
-        ),
+        entryDecorators = entryDecorators,
         entryProvider = koinEntryProvider()
     )
 }
