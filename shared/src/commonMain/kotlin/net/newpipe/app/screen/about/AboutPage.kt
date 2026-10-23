@@ -45,12 +45,9 @@ import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.app_description
 import newpipe.shared.generated.resources.contribution_encouragement
 import newpipe.shared.generated.resources.contribution_title
-import newpipe.shared.generated.resources.donation_encouragement
-import newpipe.shared.generated.resources.donation_title
 import newpipe.shared.generated.resources.faq
 import newpipe.shared.generated.resources.faq_description
 import newpipe.shared.generated.resources.faq_title
-import newpipe.shared.generated.resources.give_back
 import newpipe.shared.generated.resources.ic_foreground
 import newpipe.shared.generated.resources.open_in_browser
 import newpipe.shared.generated.resources.privacy_policy_encouragement
@@ -115,7 +112,7 @@ fun AboutPageContent(
             }
         }
 
-        // Links about NewPipe
+        // Links about BearTube
         items(items = links, key = { link -> link.url }) { link ->
             LinkListItem(
                 link = link,
@@ -138,12 +135,6 @@ private fun defaultLinks() = listOf(
         description = stringResource(Res.string.contribution_encouragement),
         action = stringResource(Res.string.view_on_github),
         url = Constants.URL_GITHUB
-    ),
-    Link(
-        title = stringResource(Res.string.donation_title),
-        description = stringResource(Res.string.donation_encouragement),
-        action = stringResource(Res.string.give_back),
-        url = Constants.URL_DONATION
     ),
     Link(
         title = stringResource(Res.string.website_title),

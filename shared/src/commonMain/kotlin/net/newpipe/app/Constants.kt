@@ -7,7 +7,6 @@ package net.newpipe.app
 
 object Constants {
     const val URL_GITHUB = ""
-    const val URL_DONATION = ""
     const val URL_WEBSITE = ""
     const val URL_PRIVACY = ""
     const val URL_FAQ = ""
