@@ -20,7 +20,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -37,7 +36,6 @@ import net.newpipe.app.model.Link
 import net.newpipe.app.platform.ShareHandler
 import net.newpipe.app.preview.ThemePreviewProvider
 import net.newpipe.app.theme.iconTVDPI
-import net.newpipe.app.theme.logoBackground
 import net.newpipe.app.theme.spaceLarge
 import net.newpipe.app.theme.spaceXSmall
 import net.newpipe.app.theme.spaceXXSmall
@@ -87,9 +85,7 @@ fun AboutPageContent(
             ) {
                 Image(
                     modifier = Modifier
-                        .requiredSize(iconTVDPI)
-                        .clip(CircleShape)
-                        .background(color = logoBackground),
+                        .requiredSize(iconTVDPI),
                     painter = painterResource(Res.drawable.ic_foreground),
                     contentDescription = BuildConfig.APP_NAME
                 )
