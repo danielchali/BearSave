@@ -6,12 +6,16 @@
 package net.newpipe.app.composable
 
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import net.newpipe.app.preview.ThemePreviewProvider
@@ -39,7 +43,11 @@ fun PreferenceRow(
     onClick: () -> Unit = {}
 ) {
     ListItem(
-        modifier = modifier.clickable(onClick = onClick),
+        modifier = modifier
+            .padding(horizontal = 16.dp, vertical = 5.dp)
+            .shadow(2.dp, RoundedCornerShape(18.dp))
+            .clickable(onClick = onClick),
+        shape = RoundedCornerShape(18.dp),
         headlineContent = { Text(text = title) },
         supportingContent = summary?.let { text -> { Text(text = text) } },
         leadingContent = icon?.let { painter ->
