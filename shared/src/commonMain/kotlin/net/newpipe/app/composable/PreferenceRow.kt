@@ -13,6 +13,7 @@ import androidx.compose.material3.ListItem
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.unit.dp
@@ -46,8 +47,8 @@ fun PreferenceRow(
         modifier = modifier
             .padding(horizontal = 16.dp, vertical = 5.dp)
             .shadow(2.dp, RoundedCornerShape(18.dp))
+            .clip(RoundedCornerShape(18.dp))
             .clickable(onClick = onClick),
-        shape = RoundedCornerShape(18.dp),
         headlineContent = { Text(text = title) },
         supportingContent = summary?.let { text -> { Text(text = text) } },
         leadingContent = icon?.let { painter ->

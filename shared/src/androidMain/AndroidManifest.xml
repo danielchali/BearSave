@@ -8,7 +8,6 @@
     <application>
         <activity
             android:name="net.newpipe.app.ComposeActivity"
-            android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
 </manifest>

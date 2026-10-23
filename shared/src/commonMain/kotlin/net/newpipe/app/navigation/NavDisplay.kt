@@ -15,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSerializable
 import androidx.lifecycle.viewmodel.navigation3.rememberViewModelStoreNavEntryDecorator
+import androidx.navigation3.runtime.NavEntryDecorator
 import androidx.navigation3.runtime.rememberSaveableStateHolderNavEntryDecorator
 import androidx.navigation3.ui.NavDisplay
 import androidx.savedstate.compose.serialization.serializers.SnapshotStateListSerializer
@@ -42,11 +43,14 @@ fun NavDisplay(
         navigator.backstack
     }
 
-    val saveableStateDecorator = rememberSaveableStateHolderNavEntryDecorator()
-    val viewModelStoreDecorator = rememberViewModelStoreNavEntryDecorator()
-    val entryDecorators = remember(saveableStateDecorator, viewModelStoreDecorator) {
-        listOf(saveableStateDecorator, viewModelStoreDecorator)
-    }
+    val saveableStateDecorator =
+        rememberSaveableStateHolderNavEntryDecorator<Destination>()
+    val viewModelStoreDecorator =
+        rememberViewModelStoreNavEntryDecorator<Destination>()
+    val entryDecorators: List<NavEntryDecorator<Destination>> =
+        remember(saveableStateDecorator, viewModelStoreDecorator) {
+            listOf(saveableStateDecorator, viewModelStoreDecorator)
+        }
 
     val currentDestination = backstack.lastOrNull() ?: startDestination
     val destinations = listOf(Destination.About, Destination.Settings)
