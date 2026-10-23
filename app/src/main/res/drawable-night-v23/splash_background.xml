@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item
-        android:drawable="@color/bearsave_splash_green"/>
-
+    <item android:drawable="@color/bearsave_splash_green" />
     <item
         android:width="80dp"
         android:height="80dp"
         android:gravity="center"
-        android:drawable="@drawable/splash_foreground"/>
+        android:drawable="@mipmap/ic_launcher" />
+    <item android:bottom="48dp">
+        <bitmap
+            android:src="@drawable/splash_dredlabs_branding"
+            android:gravity="bottom|center_horizontal" />
+    </item>
 </layer-list>
