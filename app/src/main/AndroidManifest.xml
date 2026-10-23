@@ -39,7 +39,7 @@
         android:theme="@style/OpeningTheme"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".MainActivity"
+            android:name="net.newpipe.app.ComposeActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:launchMode="singleTask">
