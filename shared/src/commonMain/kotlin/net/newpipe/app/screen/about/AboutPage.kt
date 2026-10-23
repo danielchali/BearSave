@@ -41,6 +41,7 @@ import net.newpipe.app.theme.spaceXSmall
 import net.newpipe.app.theme.spaceXXSmall
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.app_description
+import newpipe.shared.generated.resources.branding_from_dredlabs
 import newpipe.shared.generated.resources.contribution_encouragement
 import newpipe.shared.generated.resources.contribution_title
 import newpipe.shared.generated.resources.faq
@@ -98,6 +99,12 @@ fun AboutPageContent(
                 Text(
                     text = BuildConfig.VERSION_NAME,
                     style = MaterialTheme.typography.titleMedium,
+                    textAlign = TextAlign.Center
+                )
+                Text(
+                    text = stringResource(Res.string.branding_from_dredlabs),
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                     textAlign = TextAlign.Center
                 )
                 Text(
