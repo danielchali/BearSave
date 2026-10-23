@@ -12,5 +12,5 @@ const val BEARTUBE_VERSION_CODE = 1016
 const val BEARTUBE_VERSION_NAME = "0.29.2"
 
 const val BEARTUBE_APPLICATION_ID_OLD = "org.schabi.newpipe"
-const val DVID_APPLICATION_ID = "com.dvid.app"
+const val BEARTUBE_APPLICATION_ID = "com.beartube.app"
 const val BEARTUBE_APPLICATION_ID_NEW = "net.newpipe.app"

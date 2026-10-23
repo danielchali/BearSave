@@ -39,7 +39,7 @@ configure<ApplicationExtension> {
     namespace = BEARTUBE_APPLICATION_ID_OLD
 
     defaultConfig {
-        applicationId = DVID_APPLICATION_ID
+        applicationId = BEARTUBE_APPLICATION_ID
         resValue("string", "app_name", "BearTube")
         minSdk {
             version = release(BEARTUBE_VERSION_SDK_MIN)
