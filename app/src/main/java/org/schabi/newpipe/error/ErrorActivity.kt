@@ -101,7 +101,21 @@ class ErrorActivity : AppCompatActivity() {
 
         // normal bugreport
         buildInfo(errorInfo)
-        binding.errorMessageView.setTextWithLinks(errorInfo.getMessage(this))
+        val exactError = errorInfo.stackTraces.firstOrNull()
+            ?.lineSequence()
+            ?.firstOrNull { it.isNotBlank() }
+            ?.trim()
+            .orEmpty()
+        val message = if (exactError.isEmpty()) {
+            errorInfo.getMessage(this)
+        } else {
+            buildString {
+                append(errorInfo.getMessage(this@ErrorActivity))
+                append("\n\n")
+                append(exactError)
+            }
+        }
+        binding.errorMessageView.setTextWithLinks(message)
         binding.errorView.text = formErrorText(errorInfo.stackTraces)
 
         // print stack trace once again for debugging:

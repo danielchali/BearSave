@@ -2,10 +2,10 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/bearsave_splash_green" />
     <item
-        android:width="80dp"
-        android:height="80dp"
+        android:width="56dp"
+        android:height="56dp"
         android:gravity="center"
-        android:drawable="@mipmap/ic_launcher" />
+        android:drawable="@drawable/splash_foreground" />
     <item android:bottom="48dp">
         <bitmap
             android:src="@drawable/splash_dredlabs_branding"
